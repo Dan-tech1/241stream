@@ -1,0 +1,141 @@
+<!--c\Desktop\241stream\abonnement.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Abonnement - 241stream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="stream241.jpg">
+  <style>
+    .main-content {
+      background: linear-gradient(135deg, #18122b 60%, #e50914 100%);
+      min-height: 70vh;
+      padding: 48px 0 32px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .abo-box {
+      background: rgba(24, 18, 43, 0.98);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #000a;
+      padding: 36px 32px 32px 32px;
+      max-width: 600px;
+      width: 100%;
+      color: #fff;
+      margin: 0 16px;
+      animation: fadeInUp 0.8s;
+    }
+    .abo-box h2 {
+      color: #e50914;
+      font-size: 2.1rem;
+      margin-bottom: 18px;
+      text-align: center;
+      text-shadow: 0 2px 12px #000a;
+    }
+    .abo-list {
+      margin: 18px 0 0 0;
+      padding: 0;
+      color: #fff;
+      list-style: none;
+    }
+    .abo-list li {
+      margin-bottom: 18px;
+      font-size: 1.08rem;
+      background: #231b3a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      box-shadow: 0 2px 8px #0003;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .abo-list strong {
+      color: #e50914;
+      font-size: 1.1rem;
+    }
+    .abo-btn {
+      background: #e50914;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 22px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px #0005;
+    }
+    .abo-btn:hover {
+      color: #e50914;
+      background: #f1edf3;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="stream241.jpg" alt="241stream Logo">
+      </a>
+      <nav class="nav-links">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <script>
+          function toggleMenu() {
+            const navList = document.querySelector('.nav-links ul');
+            navList.classList.toggle('show');
+          }
+        </script>
+        <ul>
+          <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+          <li><a href="film.html"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+          <li><a href="series.htm"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+          <li><a href="abonnement.html" class="active"><ion-icon name="card-outline"></ion-icon> Abonnement</a></li>
+          <!-- Ionicons CDN -->
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="abo-box">
+      <h2>Nos offres d'abonnement</h2>
+      <ul class="abo-list">
+        <li>
+          <span><strong>Découverte</strong> <br>1 semaine - Gratuit</span>
+          <button class="abo-btn">S'inscrire</button>
+        </li>
+        <li>
+          <span><strong>Mensuel</strong> <br>3,99€/mois</span>
+          <button class="abo-btn">Choisir</button>
+        </li>
+        <li>
+          <span><strong>Annuel</strong> <br>44,99€/an</span>
+          <button class="abo-btn">Choisir</button>
+        </li>
+      </ul>
+      <p style="margin-top:24px;text-align:center;">
+        Pour toute question sur les abonnements, contactez-nous à <a href="mailto:support@241stream.com" style="color:#e50914;">support@241stream.com</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 241stream. Tous droits réservés.</p>
+      <ul>
+        <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
+        <li><a href="conditions.htm">Conditions d'utilisation</a></li>
+        <li><a href="aide.html">Aide</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="about.html">à-props</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

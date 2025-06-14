@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>241stream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="stream241.jpg">
+  <!-- Ionicons CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    #filmalaune-carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 2000px;
+      margin: auto;
+      height: 260px;
+      position: relative;
+      background: transparent;
+    }
+    .filmalaune-slide {
+      min-width: 33.33%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      transition: transform 1s cubic-bezier(.4,2,.6,1);
+      will-change: transform;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .filmalaune-imgbox {
+      width: 100%;
+      height: 180px;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 16px #0007;
+      cursor: pointer;
+      background: #18122b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .filmalaune-imgbox img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .filmalaune-title {
+      margin-top: 18px;
+      background: #e50914;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 5px 0;
+      width: 50%;
+      text-align: center;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #0005;
+      text-transform: uppercase;
+    }
+    @media (max-width: 760px) {
+      #filmalaune-carousel { max-width: 100%; }
+      .filmalaune-slide { min-width: 100%; }
+      .filmalaune-imgbox { height: 110px; }
+      .filmalaune-title { font-size: 1rem; padding: 4px 0; }
+    }
+    /* Responsive pour popup vidéo */
+    @media (max-width: 700px) {
+      #xlaflix-popup iframe {
+        width: 100% !important;
+        height: 160px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="splash-logo" style="display:none;position:fixed;z-index:9999;inset:0;background:#181818;"></div>
+  <header>
+    <div class="header-content">
+      <a href="#" class="logo">
+        <img src="stream241.jpg" alt="241stream Logo">
+      </a>
+      <nav class="nav-links">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <ion-icon name="home-outline"></ion-icon>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="film.html">
+              <ion-icon name="film-outline"></ion-icon>
+              Films
+            </a>
+          </li>
+          <li>
+            <a href="series.htm">
+              <ion-icon name="tv-outline"></ion-icon>
+              Séries
+            </a>
+          </li>
+          <li>
+            <a href="abonnement.html">
+              <ion-icon name="card-outline"></ion-icon>
+              Abonnement
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form class="search-form" action="#" method="get" style="display:inline;">
+        <input type="text" name="q" placeholder="Rechercher un film ou une série..." aria-label="Rechercher un film ou une série">
+        <button type="submit" class="search-btn" aria-label="Rechercher">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </form>
+      <button class="signin-btn">
+        <ion-icon name="person-outline"></ion-icon> S'identifier
+      </button>
+      <ul class="bn">
+        <a href="contact.html">
+          <ion-icon name="mail-outline"></ion-icon>
+          Contact
+        </a>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="carousel" id="filmalaune-carousel"></div>
+    </section>
+
+    <section class="section">
+      <h2>TOP 12 DES FILMS CETTE SEMAINE</h2>
+      <div class="carousel" id="films-carousel"></div>
+    </section>
+    <section class="section">
+      <h2>TOP 12 DES SÉRIES CETTE SEMAINE</h2>
+      <div class="carousel" id="series-carousel"></div>
+    </section>
+    <section class="section">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h2 style="margin:0;">Univers Fantastiques</h2>
+        <span class="view-more"><a href="film.html">Voir tout</a></span>
+      </div>
+      <div class="carousel" id="fantastic-carousel"></div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="index.html" class="logo1">
+      <img src="stream241.jpg" alt="241stream Logo">
+    </a>
+    <div class="footer-content">
+      <p>&copy; 2023 241stream. Tous droits réservés.</p>
+      <ul>
+        <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
+        <li><a href="conditions.htm">Conditions d'utilisation</a></li>
+        <li><a href="aide.html">Aide</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="about.html">à-props</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const navList = document.querySelector('.nav-links ul');
+      navList.classList.toggle('show');
+    }
+
+    // JS pour la recherche locale sur la page d'accueil avec message si aucun résultat
+    document.querySelectorAll('.search-form').forEach(form => {
+      form.addEventListener('submit', function(e) {
+        const input = this.querySelector('input[name="q"]');
+        if (!input.value.trim()) {
+          e.preventDefault();
+          input.focus();
+          input.placeholder = "Veuillez entrer un titre...";
+          return;
+        }
+        e.preventDefault();
+        const query = input.value.trim().toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        let found = false;
+        cards.forEach(card => {
+          const title = card.querySelector('.card-title')?.textContent?.toLowerCase() || '';
+          if (title.includes(query)) {
+            card.style.display = '';
+            found = true;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Affiche un message si aucun résultat trouvé
+        let noResultMsg = document.getElementById('no-result-found');
+        if (!found) {
+          if (!noResultMsg) {
+            noResultMsg = document.createElement('div');
+            noResultMsg.id = 'no-result-found';
+            noResultMsg.textContent = "Aucun résultat trouvé";
+            noResultMsg.style.color = "#fff";
+            noResultMsg.style.background = "#e50914";
+            noResultMsg.style.padding = "12px";
+            noResultMsg.style.textAlign = "center";
+            noResultMsg.style.borderRadius = "8px";
+            noResultMsg.style.margin = "24px auto";
+            noResultMsg.style.maxWidth = "400px";
+            document.querySelector('main').appendChild(noResultMsg);
+          }
+          input.value = '';
+          input.placeholder = "Aucun résultat trouvé";
+        } else if (noResultMsg) {
+          noResultMsg.remove();
+        }
+      });
+    });
+
+    // Carrousel 3 films à la une qui défilent
+    const filmsAlaUne = [
+      {
+        title: "Inception",
+        image: "https://img.youtube.com/vi/YoHD9XEInc0/hqdefault.jpg",
+        video: "https://www.youtube.com/embed/YoHD9XEInc0"
+      },
+      {
+        title: "Black Panther",
+        image: "https://img.youtube.com/vi/xjDjIWPwcPU/hqdefault.jpg",
+        video: "https://www.youtube.com/embed/xjDjIWPwcPU"
+      },
+      {
+        title: "Joker",
+        image: "https://img.youtube.com/vi/zAGVQLHvwOY/hqdefault.jpg",
+        video: "https://www.youtube.com/embed/zAGVQLHvwOY"
+      }
+    ];
+
+    let filmAlaUneIndex = 0;
+
+    function renderFilmAlaUneCarousel() {
+      const carousel = document.getElementById('filmalaune-carousel');
+      carousel.innerHTML = '';
+      for (let i = 0; i < 3; i++) {
+        const idx = (filmAlaUneIndex + i) % filmsAlaUne.length;
+        const film = filmsAlaUne[idx];
+        const slide = document.createElement('div');
+        slide.className = 'filmalaune-slide';
+        slide.innerHTML = `
+          <div class="filmalaune-imgbox" onclick="showFilmPopup('${film.title}','${film.video}','${film.image}')">
+            <img src="${film.image}" alt="${film.title}">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:48px;color:white;text-shadow:0 0 8px #000;">&#9658;</div>
+          </div>
+          <div class="filmalaune-title">${film.title}</div>
+        `;
+        carousel.appendChild(slide);
+      }
+    }
+
+    renderFilmAlaUneCarousel();
+    setInterval(() => {
+      filmAlaUneIndex = (filmAlaUneIndex + 1) % filmsAlaUne.length;
+      renderFilmAlaUneCarousel();
+    }, 1000);
+
+    // Popup vidéo compatible mobile
+    window.showFilmPopup = function(title, videoUrl, imageUrl) {
+      let popup = document.getElementById('film-popup');
+      if (popup) popup.remove();
+      popup = document.createElement('div');
+      popup.id = 'film-popup';
+      popup.style.position = 'fixed';
+      popup.style.top = 0;
+      popup.style.left = 0;
+      popup.style.width = '100vw';
+      popup.style.height = '100vh';
+      popup.style.background = 'rgba(0,0,0,0.92)';
+      popup.style.display = 'flex';
+      popup.style.alignItems = 'center';
+      popup.style.justifyContent = 'center';
+      popup.style.zIndex = 10001;
+      popup.innerHTML = `
+        <div style="background:#18122b;max-width:98vw;width:420px;border-radius:18px;box-shadow:0 8px 32px #000;position:relative;padding:0 0 24px 0;">
+          <button id="close-film-popup" style="position:absolute;top:12px;right:12px;background:#e50914;color:#fff;border:none;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer;z-index:2;">&times;</button>
+          <div style="padding:24px 24px 0 24px;">
+            <div style="position:relative;">
+              <img src="${imageUrl}" alt="${title}" style="width:100%;max-width:100%;border-radius:12px;box-shadow:0 2px 16px #000a;transition:transform 0.2s;cursor:pointer;" id="popup-thumbnail">
+            </div>
+            <div style="margin:18px 0 8px 0;font-size:1.2rem;font-weight:bold;color:#fff;text-align:center;">${title}</div>
+          </div>
+          <div style="padding:0 24px;">
+            <div id="popup-video-container" style="margin-top:10px;display:flex;justify-content:center;">
+              <button id="play-film-video" style="background:#e50914;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:1.1rem;font-weight:bold;cursor:pointer;box-shadow:0 2px 8px #0005;transition:background 0.2s;">Lire la vidéo</button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(popup);
+
+      document.getElementById('close-film-popup').onclick = () => popup.remove();
+      popup.onclick = e => { if (e.target === popup) popup.remove(); };
+
+      document.getElementById('popup-thumbnail').onclick = function() {
+        this.style.transform = this.style.transform ? '' : 'scale(1.18)';
+        this.style.zIndex = 3;
+      };
+
+      document.getElementById('play-film-video').onclick = function() {
+        document.getElementById('popup-video-container').innerHTML = `
+          <iframe width="100%" height="240"
+            src="${videoUrl}?autoplay=1&rel=0"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            style="border-radius:12px;box-shadow:0 2px 16px #000a;">
+          </iframe>
+        `;
+      };
+    };
+
+    // --- 241stream Cards & Popup pour les autres carrousels ---
+    const films = [
+      { title: "God Save the Tuche", video: "https://www.youtube.com/embed/N9yAfVin2Sg", recent: true, description: "Comédie familiale déjantée." },
+      { title: "Sinners", video: "https://www.youtube.com/embed/MWkBSgAWGiM",recent: true, description: "Court-métrage dramatique." },
+      { title: "Minecraft, Le Film", video: "https://www.youtube.com/embed/cCbKfFTLiAM", description: "L'univers du jeu culte adapté au cinéma." },
+      { title: "Le Challenge", video: "https://www.youtube.com/embed/VAhViiRDr3s", description: "Un défi hors du commun." },
+      { title: "A Working Man", video: "https://www.youtube.com/embed/iXJEXVPX9bU", description: "Portrait d'un homme ordinaire." },
+      { title: "La Mort d'une Licorne", video: "https://www.youtube.com/embed/doSBRtKDP5s", description: "Une aventure fantastique." },
+      { title: "Sous écrous", video: "https://www.youtube.com/embed/QRQy-MyGf9Y", description: "Thriller carcéral haletant." },
+      { title: "Boot Camp", video: "https://www.youtube.com/embed/GKdOuxUYfjw", description: "L'entraînement de l'extrême." },
+      { title: "Le Retour des Thunderman", video: "https://www.youtube.com/embed/AVKmklJSFbM", description: "Les super-héros sont de retour !" },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/JfFL4T7ytGc", description: "Aventures et humour au rendez-vous." },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/k-DUe1BORzM", description: "Aventures et humour au rendez-vous." },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/av9B5QgOZoA", description: "Aventures et humour au rendez-vous." }
+    ];
+    const series = [
+      { title: "The Last of Us", video: "https://www.youtube.com/embed/3wSUg_Bc7OM", description: "Survivre dans un monde post-apocalyptique." },
+      { title: "Grimm", video: "https://www.youtube.com/embed/M7OmaOLSPe0", recent: true, description: "Contes et créatures revisités." },
+      { title: "The Rookie", video: "https://www.youtube.com/embed/2SKUInhz0O0", description: "Un nouveau flic dans la police de LA." },
+      { title: "Game of Thrones", video: "https://www.youtube.com/embed/O2z6FTph3lU", description: "La lutte pour le trône de fer." },
+      { title: "LOL : Qui rit, sort !", video: "https://www.youtube.com/embed/fqpHMEBwMeY", recent: true, description: "Le jeu où il ne faut pas rire !" },
+      { title: "Les 100", video: "https://www.youtube.com/embed/BaVuM743IdU", description: "Retour sur Terre après l'apocalypse." },
+      { title: "Snowfall", video: "https://www.youtube.com/embed/laAlkAKzKfU", description: "L'essor du crack à Los Angeles." },
+      { title: "Les Simpson", video: "https://www.youtube.com/embed/GmRA0d2YZds", recent: true, description: "La famille la plus déjantée d'Amérique." },
+      { title: "Tulsa King", video: "https://www.youtube.com/embed/0Hga9Rj4ZGo", description: "Un mafieux à Tulsa." },
+      { title: "Shameless", video: "https://www.youtube.com/embed/R8l6OmK9uzc", description: "La famille Gallagher repousse les limites." },
+      { title: "Shameless", video: "https://www.youtube.com/embed/mfIahOt6sFE", description: "La famille Gallagher repousse les limites." },
+      { title: "Shameless", video: "https://www.youtube.com/embed/HcuDWjdNR4s", description: "La famille Gallagher repousse les limites." }
+    ];
+    const fantastic = [
+      { title: "Wicked", video: "https://www.youtube.com/embed/6EOvLud0Lj0", description: "La magie prend vie." },
+      { title: "Kraven the Hunter", video: "https://www.youtube.com/embed/o2MkPfKefzc", description: "Le chasseur ultime." },
+      { title: "Harry Potter et le Prisonnier d'Azkaban", video: "https://www.youtube.com/embed/U7gMKQDrLl0", top50: true, description: "Le troisième volet de la saga magique." },
+      { title: "Adaline", video: "https://www.youtube.com/embed/7DWfT3o5Eec", description: "Une vie hors du temps." },
+      { title: "La Mort d'une Licorne", video: "https://www.youtube.com/embed/NgksuMW8PaY", top50: true, description: "Une aventure fantastique." },
+      { title: "Blanche Neige", video: "https://www.youtube.com/embed/L07jRYAW3Lg", top50: true, description: "Le conte revisité." },
+      { title: "Red One", video: "https://www.youtube.com/embed/Z8k7HacumJ0", description: "Action et magie pour Noël." },
+      { title: "Ratatouille", video: "https://www.youtube.com/embed/3XS5MP-G2i8", description: "Un rat chef étoilé à Paris." },
+      { title: "Descendants : L’Ascension de Red", video: "https://www.youtube.com/embed/PFQIU-0e8pc", description: "Les enfants de méchants prennent le pouvoir." },
+      { title: "Les Visiteurs", video: "https://www.youtube.com/embed/C_qT7s-Ox_o", description: "Voyage dans le temps loufoque." },
+      { title: "Les 4 Fantastiques", video: "https://www.youtube.com/embed/Df1OpZySFsI", description: "Les super-héros de Marvel." },
+      { title: "Kenshin : le vagabond", video: "https://www.youtube.com/embed/3WYPTt8e-0k", description: "Le samouraï errant." },
+      { title: "Harry Potter et la Coupe de feu", video: "https://www.youtube.com/embed/XQpTVMEk0po", top50: true, description: "Le tournoi des trois sorciers." }
+    ];
+
+    function getYoutubeId(url) {
+      const match = url.match(/embed\/([a-zA-Z0-9_-]+)/);
+      return match ? match[1] : null;
+    }
+
+    function createCard(item, index, showRank = false) {
+      const youtubeId = getYoutubeId(item.video);
+      const thumbnail = youtubeId
+        ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
+        : null;
+
+      return `
+        <div class="card" tabindex="0"
+          data-title="${encodeURIComponent(item.title)}"
+          data-video="${encodeURIComponent(item.video + '?rel=0')}"
+          data-description="${encodeURIComponent(item.description || '')}"
+          data-thumbnail="${encodeURIComponent(thumbnail || '')}"
+          data-rank="${showRank ? index + 1 : ''}"
+          data-recent="${item.recent ? '1' : ''}"
+          data-top50="${item.top50 ? '1' : ''}"
+          onclick="showXlaflixPopup(this)">
+          ${showRank ? `<div class="ranking-badge">${index + 1}</div>` : ""}
+          ${item.recent ? `<div class="recent-badge">AJOUT RÉCENT</div>` : ""}
+          ${item.top50 ? `<div class="recent-badge" style="background:#960ef3;top:10px;bottom:auto;left:auto;right:10px;border-radius:0.375rem;">TOP 50</div>` : ""}
+          <div class="video-cover">
+            ${thumbnail ? `<img src="${thumbnail}" alt="${item.title}" style="width:100%;height:180px;object-fit:cover;cursor:pointer;">` : `<span>Vidéo non supportée</span>`}
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:48px;color:white;text-shadow:0 0 8px #000;">&#9658;</div>
+          </div>
+          <div class="card-title">${item.title}</div>
+        </div>
+      `;
+    }
+
+    document.getElementById('films-carousel').innerHTML =
+      films.map((f, i) => createCard(f, i, true)).join('');
+    document.getElementById('series-carousel').innerHTML =
+      series.map((s, i) => createCard(s, i, true)).join('');
+    document.getElementById('fantastic-carousel').innerHTML =
+      fantastic.map(f => createCard(f, 0, false)).join('');
+
+    window.showXlaflixPopup = function(cardElem) {
+      const title = decodeURIComponent(cardElem.getAttribute('data-title'));
+      const video = decodeURIComponent(cardElem.getAttribute('data-video'));
+      const description = decodeURIComponent(cardElem.getAttribute('data-description'));
+      const thumbnail = decodeURIComponent(cardElem.getAttribute('data-thumbnail'));
+      const rank = cardElem.getAttribute('data-rank');
+      const recent = cardElem.getAttribute('data-recent') === '1';
+      const top50 = cardElem.getAttribute('data-top50') === '1';
+
+      let popup = document.getElementById('xlaflix-popup');
+      if (popup) popup.remove();
+      popup = document.createElement('div');
+      popup.id = 'xlaflix-popup';
+      popup.style.position = 'fixed';
+      popup.style.top = 0;
+      popup.style.left = 0;
+      popup.style.width = '100vw';
+      popup.style.height = '100vh';
+      popup.style.background = 'rgba(0,0,0,0.92)';
+      popup.style.display = 'flex';
+      popup.style.alignItems = 'center';
+      popup.style.justifyContent = 'center';
+      popup.style.zIndex = 10001;
+      popup.innerHTML = `
+        <div style="background:#18122b;max-width:98vw;width:420px;border-radius:18px;box-shadow:0 8px 32px #000;position:relative;padding:0 0 24px 0;">
+          <button id="close-xlaflix-popup" style="position:absolute;top:12px;right:12px;background:#e50914;color:#fff;border:none;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer;z-index:2;">&times;</button>
+          <div style="padding:24px 24px 0 24px;">
+            <div style="position:relative;">
+              <img src="${thumbnail}" alt="${title}" style="width:100%;max-width:100%;border-radius:12px;box-shadow:0 2px 16px #000a;transition:transform 0.2s;cursor:pointer;" id="popup-thumbnail">
+              ${rank ? `<div class="ranking-badge" style="position:absolute;top:10px;left:10px;">${rank}</div>` : ""}
+              ${recent ? `<div class="recent-badge" style="position:absolute;top:10px;right:10px;">AJOUT RÉCENT</div>` : ""}
+              ${top50 ? `<div class="recent-badge" style="background:#960ef3;position:absolute;top:10px;right:10px;left:auto;border-radius:0.375rem;">TOP 50</div>` : ""}
+            </div>
+            <div style="margin:18px 0 8px 0;font-size:1.2rem;font-weight:bold;color:#fff;text-align:center;">${title}</div>
+            <div style="color:#e50914;font-size:1rem;text-align:center;margin-bottom:12px;">${description || ""}</div>
+          </div>
+          <div style="padding:0 24px;">
+            <div id="popup-video-container" style="margin-top:10px;display:flex;justify-content:center;">
+              <button id="play-xlaflix-video" style="background:#e50914;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:1.1rem;font-weight:bold;cursor:pointer;box-shadow:0 2px 8px #0005;transition:background 0.2s;">Lire la vidéo</button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(popup);
+
+      document.getElementById('close-xlaflix-popup').onclick = () => popup.remove();
+      popup.onclick = e => { if (e.target === popup) popup.remove(); };
+
+      document.getElementById('popup-thumbnail').onclick = function() {
+        this.style.transform = this.style.transform ? '' : 'scale(1.18)';
+        this.style.zIndex = 3;
+      };
+
+      document.getElementById('play-xlaflix-video').onclick = function() {
+        document.getElementById('popup-video-container').innerHTML = `
+          <iframe width="100%" height="240"
+            src="${video}&autoplay=1&rel=0"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            style="border-radius:12px;box-shadow:0 2px 16px #000a;">
+          </iframe>
+        `;
+      };
+    };
+  </script>
+</body>
+</html>

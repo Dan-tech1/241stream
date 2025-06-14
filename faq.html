@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>FAQ - 241stream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="stream241.jpg">
+  <style>
+    .main-content {
+      background: linear-gradient(135deg, #18122b 60%, #e50914 100%);
+      min-height: 70vh;
+      padding: 48px 0 32px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .faq-box {
+      background: rgba(24, 18, 43, 0.98);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #000a;
+      padding: 36px 32px 32px 32px;
+      max-width: 700px;
+      width: 100%;
+      color: #fff;
+      margin: 0 16px;
+      animation: fadeInUp 0.8s;
+    }
+    .faq-box h2 {
+      color: #e50914;
+      font-size: 2.1rem;
+      margin-bottom: 18px;
+      text-align: center;
+      text-shadow: 0 2px 12px #000a;
+    }
+    .faq-list {
+      margin: 18px 0 0 0;
+      padding: 0;
+      color: #fff;
+      list-style: none;
+    }
+    .faq-list li {
+      margin-bottom: 18px;
+      font-size: 1.08rem;
+      background: #231b3a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      box-shadow: 0 2px 8px #0003;
+    }
+    .faq-list strong {
+      color: #e50914;
+      display: block;
+      margin-bottom: 6px;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="stream241.jpg" alt="241stream Logo">
+      </a>
+      <nav class="nav-links">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <script>
+          function toggleMenu() {
+            const navList = document.querySelector('.nav-links ul');
+            navList.classList.toggle('show');
+          }
+        </script>
+        <ul>
+          <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+          <li><a href="film.html"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+          <li><a href="series.htm"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+          <li><a href="faq.html" class="active"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="faq-box">
+      <h2>Foire Aux Questions</h2>
+      <ul class="faq-list">
+        <li>
+          <strong>Comment regarder un film ou une série ?</strong>
+          Cliquez sur la couverture du film ou de la série, puis sur "play" pour lancer la lecture.
+        </li>
+        <li>
+          <strong>Dois-je créer un compte pour accéder au contenu ?</strong>
+          Non, la plupart des contenus sont accessibles sans inscription. Cependant, certaines fonctionnalités avancées nécessitent un compte.
+        </li>
+        <li>
+          <strong>Je n'arrive pas à me connecter, que faire ?</strong>
+          Vérifiez votre email et votre mot de passe. Si le problème persiste, contactez le support.
+        </li>
+        <li>
+          <strong>Comment signaler un problème ou un bug ?</strong>
+          Utilisez la page de contact ou envoyez un email à <a href="mailto:support@241stream.com">support@241stream.com</a>.
+        </li>
+        <li>
+          <strong>Comment puis-je m’abonner ?</strong>
+          Rendez-vous sur la page <a href="abonnement.html">Abonnement</a> pour découvrir nos offres.
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 241stream. Tous droits réservés.</p>
+      <ul>
+       <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
+        <li><a href="conditions.htm">Conditions d'utilisation</a></li>
+        <li><a href="aide.html">Aide</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="about.html">à-props</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
