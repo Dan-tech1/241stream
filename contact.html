@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Contact - 241stream</title>
+  <meta name="description" content="Contactez l'équipe 241stream pour toute question, suggestion ou assistance.">
+  <meta name="keywords" content="contact, support, streaming, 241stream, aide, message">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="241stream">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="stream241.jpg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Contact – 241stream">
+  <meta property="og:description" content="Contactez l'équipe 241stream pour toute question, suggestion ou assistance.">
+  <meta property="og:image" content="https://votre-domaine/stream241.jpg">
+  <meta property="og:url" content="https://votre-domaine/contact.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact – 241stream">
+  <meta name="twitter:description" content="Contactez l'équipe 241stream pour toute question, suggestion ou assistance.">
+  <meta name="twitter:image" content="https://votre-domaine/stream241.jpg">
+
+  <!-- Préconnexion pour accélérer les CDN -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 </head>
 <body>
   <header>
@@ -27,7 +48,7 @@
   <main>
     <section class="section" style="max-width:400px;margin:10px auto;">
       <h2>Contactez-nous</h2>
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" action="#" method="post" autocomplete="off">
         <label for="name">Nom :</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email :</label>
@@ -36,6 +57,12 @@
         <textarea id="message" name="message" rows="5" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
+      <div style="margin-top:18px;text-align:center;">
+        <a href="mailto:support@241stream.com" style="color:#e50914;font-weight:bold;text-decoration:none;">
+          <ion-icon name="mail-outline" style="vertical-align:middle;margin-right:6px;"></ion-icon>
+          support@241stream.com
+        </a>
+      </div>
     </section>
   </main>
   <footer>
@@ -47,7 +74,6 @@
       <ul>
         <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
         <li><a href="conditions.htm">Conditions d'utilisation</a></li>
-        <li><a href="aide.html">Aide</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="faq.html">Faq</a></li>
         <li><a href="about.html">à-props</a></li>
@@ -63,11 +89,11 @@
   <!-- Ionicons CDN -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-  function toggleMenu() {
-    const navList = document.querySelector('.nav-links ul');
-    navList.classList.toggle('show');
-}
-</script>
+  <script>
+    function toggleMenu() {
+      const navList = document.querySelector('.nav-links ul');
+      navList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

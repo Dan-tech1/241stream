@@ -4,8 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>films-241stream</title>
+  <meta name="description" content="Découvrez les meilleurs films d'action, fantastiques et d'horreur en streaming sur 241stream.">
+  <meta name="keywords" content="streaming, films, action, fantastique, horreur, gratuit, 241stream">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="241stream">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="stream241.jpg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Films en streaming – 241stream">
+  <meta property="og:description" content="Découvrez les meilleurs films d'action, fantastiques et d'horreur en streaming sur 241stream.">
+  <meta property="og:image" content="https://votre-domaine/stream241.jpg">
+  <meta property="og:url" content="https://votre-domaine/film.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Films en streaming – 241stream">
+  <meta name="twitter:description" content="Découvrez les meilleurs films d'action, fantastiques et d'horreur en streaming sur 241stream.">
+  <meta name="twitter:image" content="https://votre-domaine/stream241.jpg">
+
+  <!-- Préconnexion pour accélérer les CDN -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
   <script src="script.js"></script>
 </head>
 <body>
@@ -67,6 +89,7 @@
   </header>
 
   <main>
+    <h1 style="display:none;">Films en streaming – 241stream</h1>
     <section class="section">
       <h2>Films d'Action</h2>
       <div class="carousel" id="action-films"></div>
@@ -90,10 +113,9 @@
       <ul>
        <li><a href="confidentialite.htm">Politique de confidentialité</a></li>
         <li><a href="conditions.htm">Conditions d'utilisation</a></li>
-        <li><a href="aide.html">Aide</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="faq.html">Faq</a></li>
-        <li><a href="about.html">à-props</a></li>
+        <li><a href="about.html">A props</a></li>
       </ul>
     </div>
     <div class="social-icons">
@@ -107,40 +129,46 @@
   <script>
     // --- Xlaflix style popup pour les films ---
     const actionFilms = [
-      { title: "John Wick", video: "https://www.youtube.com/embed/2AUmvWm5ZDQ", description: "Un tueur à gages reprend du service." },
-      { title: "Fast & Furious 9", video: "https://www.youtube.com/embed/aSiDu3Ywi8E", description: "La saga de la vitesse continue." },
-      { title: "Mission Impossible Fallout", video: "https://www.youtube.com/embed/wb49-oV0F78", description: "Ethan Hunt face à une nouvelle menace." },
-      { title: "Extraction", video: "https://www.youtube.com/embed/L6P3nI6VnlY", description: "Un mercenaire en mission dangereuse." },
-      { title: "Equalizer 2", video: "https://www.youtube.com/embed/HyNJ3UrGk_I", description: "La justice à la sauce McCall." },
-      { title: "Bad Boys for Life", video: "https://www.youtube.com/embed/jKCj3XuPG8M", description: "Les flics de Miami sont de retour." },
-      { title: "Tenet", video: "https://www.youtube.com/embed/L3pk_TBkihU", description: "Un thriller temporel signé Nolan." },
-      { title: "Skyfall", video: "https://www.youtube.com/embed/6kw1UVovByw", description: "James Bond affronte son passé." },
-      { title: "Mad Max: Fury Road", video: "https://www.youtube.com/embed/hEJnMQG9ev8", description: "Course-poursuite dans le désert post-apo." },
-      { title: "Atomic Blonde", video: "https://www.youtube.com/embed/yIUube1pSC0", description: "Espionnage et action à Berlin." }
+      { title: "AVATAR : LE MONDE PERDU", video: "https://www.youtube.com/embed/3wSUg_Bc7OM", description: "Plongez dans une aventure épique à travers un monde spectaculaire, rempli de batailles intenses et de moments inoubliables." },
+      { title: "La Traque du Hacker | Alan Ritchson", video: "https://www.youtube.com/embed/dMDEaoZzvX0", recent: true, description: "Un jeune pirate informatique se retrouve au cœur d’un affrontement entre un groupe secret et les autorités." },
+      { title: "Longmen Town Inn | L’honneur se gagne par le sabre ", video: "https://www.youtube.com/embed/yVJg9YE9b1w", description: "Pour défendre la justice, un jeune ranger expert en arts martiaux affronte son propre père et ses frères." },
+      { title: "Kung Fu Master", video: "https://www.youtube.com/embed/7f9Gmd-Oe6E", description: "Relâché de prison, un pro du kung-fu essaye d'aider la police à retrouver un dangereux tueur en série qui cible les maîtres en arts martiaux." },
+      { title: "Révolution : kung-fu", video: "https://www.youtube.com/embed/0PZCsfv5B3Q", recent: true, description: "Le jeu où il ne faut pas rire !" },
+      { title: "Le petit détective", video: "https://www.youtube.com/embed/H87lFSP4oKM", description: "Lorsque un jeu garçon et sa famille emménagent dans un manoir mystérieux, le jeune détective se donne pour mission d'élucider le cas d'une jeune fille disparue quarante ans plus tôt" },
+      { title: "Take Cover", video: "https://www.youtube.com/embed/XT8_Z6tMZDM", description: "L'essor du crack à Los Angeles." },
+      { title: "Mutant Tiger", video: "https://www.youtube.com/embed/vWXXQVTeSmE", recent: true, description: "Un maître du Feng Shui décide de créer une arène de tigres au centre de la capitale. Mais un étrange virus infecte les animaux et voilà que des centaines de tigres mutants se répandent dans les rues et noient la ville dans le sang." },
+      { title: "Mutant Carnage", video: "https://www.youtube.com/embed/CRUV5eH_x6E", description: "Des mutants, créés par des recherches secrètes, menacent la société et intensifient la lutte entre le bien et le mal." },
+      { title: "7 minutes pour braquer une banque ultra-sécurisée", video: "https://www.youtube.com/embed/ZUZZabk1Dp0", description: "Pour régler leurs dettes, trois étudiants sont forcés de braquer une banque en un temps record, sous peine de représailles." },
+      { title: "CINQ DAMES POUR UNE SURPRISE", video: "https://www.youtube.com/embed/mfIahOt6sFE", description: "CINQ DAMES POUR UNE SURPRISE" },
+      { title: "COEUR PROPRE", video: "https://www.youtube.com/embed/HcuDWjdNR4s", description: "COEUR PROPRE- RUTH KADIRI EDDIE WATSON" }
     ];
     const fantasticFilms = [
-      { title: "Harry Potter 3", video: "https://www.youtube.com/embed/lAxgztbYDbs", description: "Le prisonnier d'Azkaban s'évade." },
-      { title: "Wicked", video: "https://www.youtube.com/embed/6sP1b1PTPvg", description: "La magie prend vie." },
-      { title: "Kraven the Hunter", video: "https://www.youtube.com/embed/rze8QYwWGMs", description: "Le chasseur ultime." },
-      { title: "Adaline", video: "https://www.youtube.com/embed/yzP4kQhlPBY", description: "Une vie hors du temps." },
-      { title: "Blanche Neige", video: "https://www.youtube.com/embed/VY67V0wOlz8", description: "Le conte revisité." },
-      { title: "Red One", video: "https://www.youtube.com/embed/4nYSXdxjBwzVZUv1X9YnTQ9ZEhM", description: "Action et magie pour Noël." },
-      { title: "Ratatouille", video: "https://www.youtube.com/embed/NgsQ8mVkN8w", description: "Un rat chef étoilé à Paris." },
-      { title: "Descendants : L’Ascension de Red", video: "https://www.youtube.com/embed/7b2C5cH1yXw", description: "Les enfants de méchants prennent le pouvoir." },
-      { title: "Les Visiteurs", video: "https://www.youtube.com/embed/0vKCLJZbytU", description: "Voyage dans le temps loufoque." },
-      { title: "Les 4 Fantastiques", video: "https://www.youtube.com/embed/POBI7OhGB18", description: "Les super-héros de Marvel." }
+      { title: "Wicked", video: "https://www.youtube.com/embed/6EOvLud0Lj0", description: "La magie prend vie." },
+      { title: "Kraven the Hunter", video: "https://www.youtube.com/embed/o2MkPfKefzc", description: "Le chasseur ultime." },
+      { title: "Harry Potter et le Prisonnier d'Azkaban", video: "https://www.youtube.com/embed/U7gMKQDrLl0", top50: true, description: "Le troisième volet de la saga magique." },
+      { title: "Adaline", video: "https://www.youtube.com/embed/7DWfT3o5Eec", description: "Une vie hors du temps." },
+      { title: "La Mort d'une Licorne", video: "https://www.youtube.com/embed/NgksuMW8PaY", top50: true, description: "Une aventure fantastique." },
+      { title: "Blanche Neige", video: "https://www.youtube.com/embed/L07jRYAW3Lg", top50: true, description: "Le conte revisité." },
+      { title: "Red One", video: "https://www.youtube.com/embed/Z8k7HacumJ0", description: "Action et magie pour Noël." },
+      { title: "Ratatouille", video: "https://www.youtube.com/embed/3XS5MP-G2i8", description: "Un rat chef étoilé à Paris." },
+      { title: "Descendants : L’Ascension de Red", video: "https://www.youtube.com/embed/PFQIU-0e8pc", description: "Les enfants de méchants prennent le pouvoir." },
+      { title: "Les Visiteurs", video: "https://www.youtube.com/embed/C_qT7s-Ox_o", description: "Voyage dans le temps loufoque." },
+      { title: "Les 4 Fantastiques", video: "https://www.youtube.com/embed/Df1OpZySFsI", description: "Les super-héros de Marvel." },
+      { title: "Kenshin : le vagabond", video: "https://www.youtube.com/embed/3WYPTt8e-0k", description: "Le samouraï errant." }
     ];
     const horrorFilms = [
-      { title: "Conjuring", video: "https://www.youtube.com/embed/k10ETZ41q5o", description: "L'horreur frappe à la porte." },
-      { title: "Annabelle", video: "https://www.youtube.com/embed/KisPhy7T__Q", description: "La poupée maléfique revient." },
-      { title: "Ça", video: "https://www.youtube.com/embed/xKJmEC5ieOk", description: "Le clown terrifiant de Derry." },
-      { title: "Insidious", video: "https://www.youtube.com/embed/zuZnRUcoWos", description: "Voyage dans l'Au-delà." },
-      { title: "Sinister", video: "https://www.youtube.com/embed/_kbQAJR9YWQ", description: "Des films retrouvés, une malédiction." },
-      { title: "The Nun", video: "https://www.youtube.com/embed/pzD9zGcUNrw", description: "Le démon Valak sévit." },
-      { title: "Paranormal Activity", video: "https://www.youtube.com/embed/F_UxLEqd074", description: "La terreur filmée à la maison." },
-      { title: "REC", video: "https://www.youtube.com/embed/UPtyXbG1Z1w", description: "L'horreur en huis clos." },
-      { title: "The Ring", video: "https://www.youtube.com/embed/TM1hP8HBdXs", description: "La cassette maudite." },
-      { title: "Saw", video: "https://www.youtube.com/embed/S-1QgOMQ-ls", description: "Le jeu macabre commence." }
+      { title: "God Save the Tuche", video: "https://www.youtube.com/embed/N9yAfVin2Sg", recent: true, description: "Comédie familiale déjantée." },
+      { title: "Sinners", video: "https://www.youtube.com/embed/MWkBSgAWGiM",recent: true, description: "Court-métrage dramatique." },
+      { title: "Minecraft, Le Film", video: "https://www.youtube.com/embed/cCbKfFTLiAM", description: "L'univers du jeu culte adapté au cinéma." },
+      { title: "Le Challenge", video: "https://www.youtube.com/embed/VAhViiRDr3s", description: "Un défi hors du commun." },
+      { title: "A Working Man", video: "https://www.youtube.com/embed/iXJEXVPX9bU", description: "Portrait d'un homme ordinaire." },
+      { title: "La Mort d'une Licorne", video: "https://www.youtube.com/embed/doSBRtKDP5s", description: "Une aventure fantastique." },
+      { title: "Sous écrous", video: "https://www.youtube.com/embed/QRQy-MyGf9Y", description: "Thriller carcéral haletant." },
+      { title: "Boot Camp", video: "https://www.youtube.com/embed/GKdOuxUYfjw", description: "L'entraînement de l'extrême." },
+      { title: "Le Retour des Thunderman", video: "https://www.youtube.com/embed/AVKmklJSFbM", description: "Les super-héros sont de retour !" },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/JfFL4T7ytGc", description: "Aventures et humour au rendez-vous." },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/k-DUe1BORzM", description: "Aventures et humour au rendez-vous." },
+      { title: "Henry Danger : Le Film", video: "https://www.youtube.com/embed/av9B5QgOZoA", description: "Aventures et humour au rendez-vous." }
     ];
 
     function getYoutubeId(url) {
