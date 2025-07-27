@@ -13,17 +13,17 @@
   <link rel="icon" type="image/png" href="stream241.jpg">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="241stream – Films & Séries en streaming">
+  <meta property="og:title" content="241stream - Films & Séries en streaming">
   <meta property="og:description" content="Regardez des films et séries en streaming sur 241stream. Nouveautés, top films, séries et univers fantastiques.">
-  <meta property="og:image" content="https://votre-domaine/stream241.jpg">
-  <meta property="og:url" content="https://votre-domaine/">
+  <meta property="og:image" content="https://dan-tech1.github.io/241stream/stream241.jpg">
+  <meta property="og:url" content="https://dan-tech1.github.io/241stream/index.html">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="241stream – Films & Séries en streaming">
+  <meta name="twitter:title" content="241stream - Films & Séries en streaming">
   <meta name="twitter:description" content="Regardez des films et séries en streaming sur 241stream. Nouveautés, top films, séries et univers fantastiques.">
-  <meta name="twitter:image" content="https://votre-domaine/stream241.jpg">
+  <meta name="twitter:image" content="https://dan-tech1.github.io/241stream/stream241.jpg">
 
   <!-- Préconnexion pour accélérer les CDN -->
   <link rel="preconnect" href="https://unpkg.com">
@@ -155,7 +155,7 @@
   </header>
 
   <main>
-    <h1 style="display:none;">241stream – Films et Séries en Streaming</h1>
+    <h1 style="display:none;">241stream - Films et Séries en Streaming</h1>
     <section class="section">
       <div class="carousel" id="filmalaune-carousel"></div>
     </section>
@@ -204,53 +204,67 @@
       navList.classList.toggle('show');
     }
 
-    // JS pour la recherche locale sur la page d'accueil avec message si aucun résultat
     document.querySelectorAll('.search-form').forEach(form => {
-      form.addEventListener('submit', function(e) {
-        const input = this.querySelector('input[name="q"]');
-        if (!input.value.trim()) {
-          e.preventDefault();
-          input.focus();
-          input.placeholder = "Veuillez entrer un titre...";
-          return;
-        }
-        e.preventDefault();
-        const query = input.value.trim().toLowerCase();
-        const cards = document.querySelectorAll('.card');
-        let found = false;
-        cards.forEach(card => {
-          const title = card.querySelector('.card-title')?.textContent?.toLowerCase() || '';
-          if (title.includes(query)) {
-            card.style.display = '';
-            found = true;
-          } else {
-            card.style.display = 'none';
-          }
-        });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-        // Affiche un message si aucun résultat trouvé
-        let noResultMsg = document.getElementById('no-result-found');
-        if (!found) {
-          if (!noResultMsg) {
-            noResultMsg = document.createElement('div');
-            noResultMsg.id = 'no-result-found';
-            noResultMsg.textContent = "Aucun résultat trouvé";
-            noResultMsg.style.color = "#fff";
-            noResultMsg.style.background = "#e50914";
-            noResultMsg.style.padding = "12px";
-            noResultMsg.style.textAlign = "center";
-            noResultMsg.style.borderRadius = "8px";
-            noResultMsg.style.margin = "24px auto";
-            noResultMsg.style.maxWidth = "400px";
-            document.querySelector('main').appendChild(noResultMsg);
-          }
-          input.value = '';
-          input.placeholder = "Aucun résultat trouvé";
-        } else if (noResultMsg) {
-          noResultMsg.remove();
-        }
-      });
+    const input = this.querySelector('input[name="q"]');
+    const cards = document.querySelectorAll('.card');
+    const normalizeText = text => text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+    if (!input.value.trim()) {
+      input.focus();
+      input.placeholder = "Veuillez entrer un titre...";
+      return;
+    }
+
+    const query = normalizeText(input.value.trim());
+    let found = false;
+
+    cards.forEach(card => {
+      const title = normalizeText(card.querySelector('.card-title')?.textContent || '');
+      if (title.includes(query)) {
+        card.style.display = '';
+        found = true;
+      } else {
+        card.style.display = 'none';
+      }
     });
+
+    // Message si aucun résultat
+    let noResultMsg = document.getElementById('no-result-found');
+    if (!found) {
+      if (!noResultMsg) {
+        noResultMsg = document.createElement('div');
+        noResultMsg.id = 'no-result-found';
+        noResultMsg.textContent = "Aucun résultat trouvé";
+        noResultMsg.style.color = "#fff";
+        noResultMsg.style.background = "#e50914";
+        noResultMsg.style.padding = "12px";
+        noResultMsg.style.textAlign = "center";
+        noResultMsg.style.borderRadius = "8px";
+        noResultMsg.style.margin = "24px auto";
+        noResultMsg.style.maxWidth = "400px";
+        document.querySelector('main').appendChild(noResultMsg);
+      }
+      input.value = '';
+      input.placeholder = "Aucun résultat trouvé";
+    } else if (noResultMsg) {
+      noResultMsg.remove();
+    }
+  });
+
+  // Réinitialise si champ vide
+  const input = form.querySelector('input[name="q"]');
+  input.addEventListener('input', function() {
+    const cards = document.querySelectorAll('.card');
+    if (!this.value.trim()) {
+      cards.forEach(card => card.style.display = '');
+      const noResultMsg = document.getElementById('no-result-found');
+      if (noResultMsg) noResultMsg.remove();
+    }
+  });
+});
 
     // Carrousel 3 films à la une qui défilent
     const filmsAlaUne = [
