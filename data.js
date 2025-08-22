@@ -9,6 +9,13 @@ const DATA = {
       flags: { top:true }
     },
     {
+      title: "Devil Seed",
+      embed: "https://Uqload.cx/embed-k6ougmdhes6o.html",
+      thumb: "https://image.tmdb.org/t/p/w400/zjrDE4agtUL3xGEVAlN0SkCjbuk.jpg",
+      desc: "Alexandra, une étudiante pétillante, retourne vivre avec ses colocataires, Jessica et Breanne, pour la rentrée universitaire. Après une nuit de fête et de débauche, Alex accepte de voir une voyante pour en savoir plus sur son avenir avec son petit-copain, Brian, mais la séance se transforme en cauchemar quand celle-ci fait des allusions à la présence d’un esprit malveillant. Quand la jeune fille se réveille le lendemain, elle ne se rappelle de rien...",
+      rating:7.5,
+    },
+    {
       title: "Superman 2025",
       embed: "https://vidzy.org/embed-076h16h1kg5r.html",
       thumb: "https://image.tmdb.org/t/p/w300/60vQyjChlll1MwFtRQ10NWpUYmw.jpg",
@@ -274,32 +281,24 @@ const DATA = {
       flags:{ new:true }
     },
     {
-      title:"Moi, moche et méchant 4 - 2024",
-      embed:"https://vidzy.org/embed-g8cddpx4pe5r.html",
-      thumb:"https://image.tmdb.org/t/p/w300/bYovCvLV1RxB0zAR5cXu699P9P7.jpg",
-      desc:" Gru, Lucy et les filles, Margo, Édith et Agnès accueillent le petit dernier de la famille, Gru Junior, qui semble n’avoir qu’une passion : faire tourner son père en bourrique. Mais Gru est confronté à un nouvel ennemi, Maxime Le Mal, qui avec l’aide de sa petite amie, la fatale Valentina, va obliger toute la famille à fuir.",
+      title:"Les Bad Guys 2 - 2025",
+      embed:"https://vidzy.org/embed-6woxfkk6a9ji.html",
+      thumb:"https://image.tmdb.org/t/p/w300/opKf1uITVUkm8nteNM54uIgJZKQ.jpg",
+      desc:" Les criminels animaliers s'efforcent de se faire à leur nouvelle vie de gentils. Bientôt, ils sont tirés de leur retraite et forcés de faire un dernier travail par une équipe entièrement féminine.",
       rating: 9.5,
+    },
+     {
+      title:"Vaiana 2 - 2024",
+      embed:"https://vidzy.org/embed-orpou1z9k1g7.html",
+      thumb:"https://image.tmdb.org/t/p/w300/usdwoEwm68cdeMOvGFPwSk9nLTr.jpg",
+      desc:"Après avoir reçu une invitation inattendue de ses ancêtres, Vaiana entreprend un périple qui la conduira jusqu’aux eaux dangereuses situées aux confins des mers des îles du Pacifique. Elle y vivra des péripéties comme jamais vécues auparavant.",
+    },
+    {
+      title:"Le Roi Singe - 2023",
+      embed:"https://flixeo.xyz/tokyo/newPlayer.php?id=1bcdb313-c09e-41db-b043-2b5274334e97",
+      thumb:"https://image.tmdb.org/t/p/w400/i6ye8ueFhVE5pXatgyRrZ83LBD8.jpg",
+      desc:" Une comédie familiale bourrée d'action qui suit un singe charismatique et son bâton de combat magique dans une incroyable quête pour vaincre plus de 100 démons, un roi dragon excentrique et, pire encore, le propre ego de notre héros ! En chemin, il rencontrera une jeune villageoise qui lui reprochera son égocentrisme et lui montrera que même un tout petit caillou peut avoir de grands effets sur le monde.",
     }
   ]
 };
 
-
-/* ===== Page Builder ===== */
-function buildHome(){
-  const top10 = [...DATA.films,...DATA.series,...DATA.animes].filter(x=>x.flags?.top).slice(0,10);
-  const news = [...DATA.films,...DATA.series,...DATA.animes].filter(x=>x.flags?.new).slice(0,12);
-  const recos = [...DATA.films,...DATA.series,...DATA.animes].slice(0,18);
-
-  renderRow(qs('#row-top10'), top10, {showRank:true});
-  renderRow(qs('#row-news'), news);
-  renderRow(qs('#row-recos'), recos);
-
-  // ===== Nouvelle section Mieux notés avec tri décroissant =====
-  const topRated = [...DATA.films,...DATA.series,...DATA.animes]
-    .filter(x => x.rating && x.rating >= 7.5)
-    .sort((a,b) => b.rating - a.rating)   // tri décroissant
-    .slice(0,12);                         // limiter à 12 éléments
-  if(topRated.length > 0){
-    renderRow(qs('#row-top-rated-container'), topRated, {showRank:false});
-  }
-}

@@ -169,96 +169,72 @@ footer a:hover{text-decoration:underline}
   .modal-player iframe{height:200px}
 }
 
-/* ====== Pub Responsive ====== */
 
-.pub-footer, .pub-native {
-  margin: 20px auto;
-  text-align: center;
-  max-width: 100%;
-}
 
-.pub-footer iframe,
-.pub-native iframe,
-.pub-footer img,
-.pub-native img {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Popup pub */
-.pub-modal {
-  display: none; 
-  position: fixed;
-  z-index: 9999; 
-  left: 0;
-  top: 0;
+/* Conteneur général */
+.native-banner {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8); /* fond assombri */
-  justify-content: center;
-  align-items: center;
-}
-
-.pub-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 700px;
-  width: 90%;
+  max-width: 100%; /* prend toute la largeur disponible */
+  margin: 10px auto; /* centré avec un peu d’espace autour */
   text-align: center;
-  position: relative;
 }
 
-.close-pub {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #333;
-}
-
-.close-pub:hover {
-  color: red;
-}
-
-/* Conteneur centré */
-.header-ad {
-  display: flex;
-  justify-content: center;
-  margin: 12px 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-/* Rendre l'iframe responsive */
-.header-ad iframe {
-  width: 100% !important;  /* prend toute la largeur du conteneur */
-  max-width: 300px;         /* largeur max originale */
+/* S’assure que le contenu de la bannière est responsive */
+.native-banner iframe,
+.native-banner > div {
+  width: 100% !important;
   height: auto !important;
-  aspect-ratio: 6/5;        /* conserve un ratio correct (largeur / hauteur) */
-  border: none;
+  max-width: 100%;
+}
+.native-banner {
+  margin: 15px auto;
 }
 
-/* Media queries pour ajuster la pub selon l’écran */
-@media (max-width: 768px) {
-  .header-ad iframe {
-    max-width: 250px;
+
+/* Media queries */
+@media (max-width: 768px) { /* Tablette */
+  .native-banner {
+    max-width: 90%;
   }
 }
 
-@media (max-width: 480px) {
-  .header-ad iframe {
+@media (max-width: 480px) { /* Mobile */
+  .native-banner {
     max-width: 100%;
   }
 }
 
 
+/* Conteneur de la bannière mince */
+.ad-banner {
+  width: 100%;
+  max-width: 728px; /* format "leaderboard" desktop */
+  height: auto;
+  margin: 10px auto; 
+  text-align: center;
+}
 
+.ad-banner iframe {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+  .ad-banner {
+    max-width: 468px; /* format medium */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .ad-banner {
+    max-width: 320px; /* format mobile */
+  }
+}
 
 
 

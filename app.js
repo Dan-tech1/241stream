@@ -163,35 +163,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   if(document.body.dataset.page==='home') buildHome();
 });
 
-/* ===== Pub Modal existant ===== */
-const pubModal = document.getElementById("pubModal");
-const closePub = document.querySelector(".close-pub");
 
-let pubTimer;
-
-function startPubTimer(videoElement) {
-  clearTimeout(pubTimer);
-  pubTimer = setTimeout(() => {
-    pubModal.style.display = "flex";
-  }, 1800000); // 30 minutes
-}
-
-closePub.addEventListener("click", () => {
-  pubModal.style.display = "none";
-});
-
-window.addEventListener("click", (event) => {
-  if (event.target === pubModal) {
-    pubModal.style.display = "none";
-  }
-});
-
-// Lancer le timer pub dès qu’une vidéo s’ouvre
-document.querySelectorAll(".card").forEach(card => {
-  card.addEventListener("click", () => {
-    startPubTimer();
-  });
-});
 
 
 
