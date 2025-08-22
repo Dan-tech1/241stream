@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Pages principales -->
-  <url><loc>https://241stream.com/index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://241stream.com/films.html</loc><priority>0.9</priority></url>
-  <url><loc>https://241stream.com/series.html</loc><priority>0.9</priority></url>
-  <url><loc>https://241stream.com/animes.html</loc><priority>0.9</priority></url>
-  <url><loc>https://241stream.com/faq.html</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html</loc><priority>0.9</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html</loc><priority>0.9</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/animes.html</loc><priority>0.9</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/faq.html</loc><priority>0.8</priority></url>
 
   <!-- Films -->
-  <url><loc>https://241stream.com/films.html#death-of-a-unicorn</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#superman-2025</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#death-of-a-unicorn</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#superman-2025</loc><priority>0.8</priority></url>
   <url><loc>https://241stream.com/films.html#the-pickup-2025</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#maison-de-miss-peregrine</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#la-main</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#ouija-les-origines-2016</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#heredite</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#le-cauchemar-de-peter-pan-2025</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#oboruto-naruto-le-film</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#jujutsu-kaisen-0</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#ziam</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#mufasa-le-roi-lion-2024</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#miraculous-world-londres-2024</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/films.html#moi-moche-et-mechant-4-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#maison-de-miss-peregrine</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#la-main</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#ouija-les-origines-2016</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#heredite</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#le-cauchemar-de-peter-pan-2025</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#oboruto-naruto-le-film</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#jujutsu-kaisen-0</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#ziam</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#mufasa-le-roi-lion-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241streamfilms.html#miraculous-world-londres-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/films.html#moi-moche-et-mechant-4-2024</loc><priority>0.8</priority></url>
 
   <!-- Séries et épisodes -->
-  <url><loc>https://241stream.com/series.html#mercredi-saison-2</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/series.html#mercredi-saison-2-ep1</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#mercredi-saison-2-ep2</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#mercredi-saison-2-ep3</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#mercredi-saison-2-ep4</loc><priority>0.7</priority></url>
+  <url><lochttps://dan-tech1.github.io/241stream/series.html#mercredi-saison-2</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#mercredi-saison-2-ep1</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#mercredi-saison-2-ep2</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#mercredi-saison-2-ep3</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#mercredi-saison-2-ep4</loc><priority>0.7</priority></url>
 
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep1</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep2</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep3</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep4</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep5</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep6</loc><priority>0.7</priority></url>
-  <url><loc>https://241stream.com/series.html#linstitut-saison-1-ep7</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep1</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep2</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep3</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep4</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep5</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep6</loc><priority>0.7</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/series.html#linstitut-saison-1-ep7</loc><priority>0.7</priority></url>
 
   <!-- Ajoute ici les autres séries et leurs épisodes -->
 
   <!-- Animes -->
-  <url><loc>https://241stream.com/animes.html#solo-leveling-saison-2</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/animes.html#kaiju-no-8-mission-recon-2025</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/animes.html#overlord-the-sacred-kingdom-2024</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/animes.html#les-aventuriers-de-larche-de-noe-2024</loc><priority>0.8</priority></url>
-  <url><loc>https://241stream.com/animes.html#attaque-des-titans-la-derniere-attaque-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/animes.html#solo-leveling-saison-2</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/animes.html#kaiju-no-8-mission-recon-2025</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241streamanimes.html#overlord-the-sacred-kingdom-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/animes.html#les-aventuriers-de-larche-de-noe-2024</loc><priority>0.8</priority></url>
+  <url><loc>https://dan-tech1.github.io/241stream/animes.html#attaque-des-titans-la-derniere-attaque-2024</loc><priority>0.8</priority></url>
 
 </urlset>
