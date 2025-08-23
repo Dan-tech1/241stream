@@ -161,11 +161,12 @@ footer a:hover{text-decoration:underline}
   .nav-links ul{display:none; position:absolute; top:58px; left:16px; right:16px; background:#251257; padding:10px; border-radius:12px; flex-direction:column; gap:10px}
   .nav-links ul.show{display:flex}
   .search-form input{width:120px}
+  .card{width:40vw; max-width:220px}
 }
 @media (max-width:600px){
   body{padding-top:82px}
-  .card{width:46vw; max-width:240px}
-  .thumb{height:40vw; min-height:140px}
+  .card{width:40vw; max-width:220px}
+  .thumb{height:50vw; min-height:140px}
   .modal-player iframe{height:200px}
 }
 
@@ -237,5 +238,9 @@ footer a:hover{text-decoration:underline}
 }
 
 
-
+.hr {
+  border: none;
+  border-top: 0.5px solid rgb(44, 44, 109);
+  margin: 20px 0;
+}
 

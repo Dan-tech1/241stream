@@ -37,7 +37,6 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body data-page="films">
-
 <header>
   <div class="header-content">
     <a class="logo" href="index.html"><img src="assets/images/stream241.jpg" alt=""><strong class="brand">241stream</strong></a>
@@ -59,19 +58,31 @@
 </header>
 
 <main>
-
+  
+  <section class="section">
+      <h2>Films d'Action</h2>
+      <div class="carousel" id="action-films"></div>
+    </section>
+    <section class="section">
+      <h2>Films Fantastiques</h2>
+      <div class="carousel" id="fantastic-films"></div>
+    </section>
+    <section class="section">
+      <h2>Films d'Horreur</h2>
+      <div class="carousel" id="horror-films"></div>
+    </section>
 
   <section class="section">
     <div class="section-head"><h2>Tous les films</h2></div>
     <div id="row-films" class="row"></div>
   </section>
-
+ <hr>
   <!-- Conteneur pour la bannière native -->
 <div class="native-banner">
   <script async="async" data-cfasync="false" src="//rattlekindergartencultivate.com/7e9663bf7685d3f96b10c61fe83a9456/invoke.js"></script>
   <div id="container-7e9663bf7685d3f96b10c61fe83a9456"></div>
 </div>
-
+ 
             <!-- Bannière publicitaire mince et responsive -->
 <div class="ad-banner">
   <script type="text/javascript">
@@ -85,6 +96,7 @@
   </script>
   <script type="text/javascript" src="//rattlekindergartencultivate.com/db2d8be64673f7300cbce3647c3f5259/invoke.js"></script>
 </div> 
+<hr>
 
 </main>
 
@@ -92,9 +104,11 @@
     <a href="index.html" class="logo"><img src="assets/images/stream241.jpg" alt=""><strong class="brand">241stream</strong></a>
     <div class="footer-content">
       <p>&copy; 2025 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces. 241stream n’héberge aucun contenu.</p>
+      <hr class="hr">
       <ul>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="about.html">À propos</a></li>
+        <li><a href="dmca.html">DMCA</a></li>
       </ul>
     </div>
 
@@ -118,5 +132,6 @@
 <script>
 window.addEventListener('DOMContentLoaded',()=>renderRow(document.getElementById('row-films'), DATA.films, {showRank:true}));
 </script>
+
 </body>
 </html>
