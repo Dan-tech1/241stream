@@ -8,7 +8,7 @@
   <meta name="description" content="Regardez vos séries préférées gratuitement sur 241stream. Tous genres disponibles, VF et VOSTFR, HD.">
   <meta property="og:title" content="Séries en streaming gratuit - 241stream">
   <meta property="og:description" content="Regardez vos séries préférées gratuitement sur 241stream. HD et sans inscription.">
-  <meta property="og:url" content="https://dan-tech1.github.io/241stream/series.html">
+  <meta property="og:url" content="https://241stream.netlify.app/241stream/series.html">
   <meta name="twitter:title" content="Séries en streaming gratuit - 241stream">
   <meta name="twitter:description" content="Regardez vos séries préférées gratuitement sur 241stream. HD et sans inscription.">
 
@@ -38,9 +38,74 @@
       <button aria-label="Rechercher"><ion-icon name="search-outline"></ion-icon></button>
     </form>
   </div>
+  <hr>
 </header>
 
 <main>
+
+  <section class="pub-section">
+  <!-- Pub 1 -->
+  <div class="pub-box">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'db2d8be64673f7300cbce3647c3f5259',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//rattlekindergartencultivate.com/db2d8be64673f7300cbce3647c3f5259/invoke.js"></script>
+  </div>
+
+  <!-- Pub 2 (copie avec même script ou autre key si dispo) -->
+  <div class="pub-box">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'db2d8be64673f7300cbce3647c3f5259',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//rattlekindergartencultivate.com/db2d8be64673f7300cbce3647c3f5259/invoke.js"></script>
+  </div>
+</section>
+
+
+
+   <section class="section">
+  <div class="section-head"><h2>Action</h2></div>
+  <div id="row-series-action" class="row"></div>
+</section>
+
+<section class="section">
+  <div class="section-head"><h2>Horreur</h2></div>
+  <div id="row-series-horreur" class="row"></div>
+</section>
+       <hr class="hr">
+          <!-- Bannière publicitaire mince et responsive -->
+<div class="ad-banner">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'db2d8be64673f7300cbce3647c3f5259',
+      'format' : 'iframe',
+      'height' : 90,   // hauteur réduite pour une bannière mince
+      'width' : 728,   // largeur par défaut pour desktop
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//rattlekindergartencultivate.com/db2d8be64673f7300cbce3647c3f5259/invoke.js"></script>
+</div>
+<hr class="hr">
+
+
+<section class="section">
+  <div class="section-head"><h2>Comédie</h2></div>
+  <div id="row-series-comedie" class="row"></div>
+</section>
+  
   
   <section class="section">
     <div class="section-head"><h2>Toutes les séries</h2></div>
@@ -99,6 +164,13 @@
 <script defer src="app.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded',()=>renderRow(document.getElementById('row-series'), DATA.series, {showRank:true}));
+
+  window.addEventListener('DOMContentLoaded', ()=>{
+  renderRow(document.getElementById('row-series-action'), DATA.series.filter(s => s.categorie === "action"));
+  renderRow(document.getElementById('row-series-horreur'), DATA.series.filter(s => s.categorie === "horreur"));
+  renderRow(document.getElementById('row-series-comedie'), DATA.series.filter(s => s.categorie === "comedie"));
+});
+
 </script>
 </body>
 </html>

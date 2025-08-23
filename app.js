@@ -7,7 +7,7 @@ function cardTemplate(item, index, opts={}) {
   const rankBadge = opts.showRank ? `<div class="badge">${index+1}</div>` : "";
   const flag = item.flags?.new ? '<div class="badge-flag">NOUVEAU</div>' :
                item.flags?.top ? '<div class="badge-flag">TOP</div>' : "";
-  // Si c'est une série avec épisodes, on stocke JSON, sinon embed normal
+  // Si c'est une série/anime avec épisodes, on stocke JSON, sinon embed normal
   const embedData = item.episodes ? JSON.stringify(item.episodes) : item.embed;
   return `
     <article class="card" role="button" tabindex="0"
@@ -78,7 +78,7 @@ function openPopupFromCard(card){
   try {
     const episodes = JSON.parse(embedData);
     if(Array.isArray(episodes) && episodes.length>0){
-      // Série multi-épisodes
+      // Série/anime multi-épisodes
       playerHTML = `
         <div class="episode-list">
           ${episodes.map((ep,i)=>`<button class="ep-btn" data-embed="${ep.embed}">${ep.title}</button>`).join('')}
@@ -88,13 +88,13 @@ function openPopupFromCard(card){
         </div>
       `;
     } else {
-      // Film / anime
+      // Film / anime solo
       playerHTML = `<div class="modal-player" id="player-zone">
         <button class="play-btn" id="play-now">▶ Lire la vidéo</button>
       </div>`;
     }
   } catch(e){
-    // Film / anime
+    // Film / anime solo
     playerHTML = `<div class="modal-player" id="player-zone">
       <button class="play-btn" id="play-now">▶ Lire la vidéo</button>
     </div>`;
@@ -147,9 +147,10 @@ function setupMenu(){
 
 /* ===== Page Builder ===== */
 function buildHome(){
-  const top10 = [...DATA.films,...DATA.series,...DATA.animes].filter(x=>x.flags?.top).slice(0,10);
-  const news = [...DATA.films,...DATA.series,...DATA.animes].filter(x=>x.flags?.new).slice(0,12);
-  const recos = [...DATA.films,...DATA.series,...DATA.animes].slice(0,18);
+  const allItems = [...DATA.films,...DATA.series,...DATA.animes];
+  const top10 = allItems.filter(x=>x.flags?.top).slice(0,10);
+  const news = allItems.filter(x=>x.flags?.new).slice(0,12);
+  const recos = allItems.slice(0,18);
 
   renderRow(qs('#row-top10'), top10, {showRank:true});
   renderRow(qs('#row-news'), news);
@@ -162,8 +163,3 @@ window.addEventListener('DOMContentLoaded', ()=>{
   setupSearch();
   if(document.body.dataset.page==='home') buildHome();
 });
-
-
-
-
-

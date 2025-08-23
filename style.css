@@ -1,7 +1,7 @@
 /* ====== Base / Reset ====== */
 * { box-sizing: border-box; }
 :root{
-  --bg:#18122b; --bg-2:#0b0b0b; --card:#242327;
+  --bg:#0c0c0de2; --bg-2:#0b0b0b; --card:#242327;
   --accent:#e5d309; --text:#fff; --muted:#b9b9b9;
   --radius:18px; --radius-lg:28px; --shadow:0 2px 16px rgba(0, 0, 0, 0.888);
 }
@@ -15,11 +15,11 @@ body{
 /* ====== Header ====== */
 header{
   position:fixed; inset:0 0 auto 0; height:auto; z-index:100;
-  background:var(--bg-2); box-shadow:0 2px 12px rgba(0, 0, 0, 0.463);
+  background:var(--bg-2); box-shadow:0 2px 12px rgba(0, 0, 0, 0.319);
 }
 .header-content{
-  max-width:1200px; margin:auto; padding:10px 16px;
-  display:flex; align-items:center; gap:14px; justify-content:space-between;
+  max-width:1200px; margin:auto; padding:20px 18px;
+  display:flex; align-items:center; gap:20px; justify-content:space-between;
 }
 .logo{display:flex; align-items:center; gap:10px; text-decoration:none;}
 .logo img{height:36px; width:36px; border-radius:999px; box-shadow:0 2px 8px #000a}
@@ -58,12 +58,12 @@ ul.bn a:hover{background:#fff; color:var(--accent)}
 
 /* ====== Sections ====== */
 main{min-height:60vh}
-.section{max-width:1300px; margin:26px auto; padding:0 16px}
+.section{max-width:1300px; margin:50px auto; padding:0 16px}
 .section-head{
   display:flex; align-items:center; justify-content:space-between; gap:10px; margin:4px 0 12px;
 }
 .section h2{
-  margin:0; font-size:1rem; color:var(--accent); letter-spacing:.5px;
+  margin:0; font-size:0.9rem; color:var(--accent); letter-spacing:.5px;
   border-left:4px solid var(--accent); padding-left:10px;
 }
 .section p{
@@ -99,7 +99,7 @@ main{min-height:60vh}
   width:100%; height:260px; background:#111; display:block; object-fit:cover;
 }
 .card-title{
-  padding:10px; font-weight:800; font-size:0.7rem; text-align:center; min-height:30px;
+  padding:5px; font-weight:800; font-size:0.7rem; text-align:center; min-height:30px;
 }
 .badge{position:absolute; top:10px; left:10px; background:var(--accent); color:#fff;
   font-weight:800; border-radius:999px; width:30px; height:30px; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px #0007}
@@ -158,7 +158,7 @@ footer a:hover{text-decoration:underline}
 }
 @media (max-width:768px){
   .menu-toggle{display:block}
-  .nav-links ul{display:none; position:absolute; top:58px; left:16px; right:16px; background:#251257; padding:10px; border-radius:12px; flex-direction:column; gap:10px}
+  .nav-links ul{display:none; position:absolute; top:58px; left:16px; right:16px; background:#1d1c1e; padding:10px; border-radius:12px; flex-direction:column; gap:10px}
   .nav-links ul.show{display:flex}
   .search-form input{width:120px}
   .card{width:40vw; max-width:220px}
@@ -244,3 +244,26 @@ footer a:hover{text-decoration:underline}
   margin: 20px 0;
 }
 
+
+.pub-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;        /* espace entre les pubs */
+  margin: 20px auto;
+  flex-wrap: wrap;  /* permet de passer en colonne sur mobile */
+  max-width: 100%;
+}
+
+.pub-box {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 📱 Mobile : chaque pub prend toute la largeur */
+@media (max-width: 768px) {
+  .pub-box {
+    flex: 1 1 100%;
+  }
+}
