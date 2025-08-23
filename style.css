@@ -267,3 +267,14 @@ footer a:hover{text-decoration:underline}
     flex: 1 1 100%;
   }
 }
+/* Empêche la sélection de texte */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Empêche le glisser-déposer d’images */
+img {
+  pointer-events: none;
+}
