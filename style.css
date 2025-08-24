@@ -160,7 +160,7 @@ footer a:hover{text-decoration:underline}
   .menu-toggle{display:block}
   .nav-links ul{display:none; position:absolute; top:58px; left:16px; right:16px; background:#1d1c1e; padding:10px; border-radius:12px; flex-direction:column; gap:10px}
   .nav-links ul.show{display:flex}
-  .search-form input{width:120px}
+  .search-form input{width:100px; margin-right:2px;}
   .card{width:40vw; max-width:220px}
   .brand{font-size:0.8rem}
   .menu-toggle{font-size:20px}
