@@ -94,3 +94,138 @@
     }
     
   }
+
+
+  .hero-carousel {
+  position: relative;
+  margin: 0 auto 32px auto;
+  max-width: 1400px;
+  padding: 0 12px;
+}
+.hero-title {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+.hero-row {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 12px;
+}
+.hero-card {
+  flex: 0 0 auto;
+  width: 340px;
+  height: 220px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px #000a;
+  background: #181818;
+  cursor: pointer;
+  position: relative;
+  transition: transform .2s;
+}
+.hero-card:hover {
+  transform: scale(1.04);
+}
+.hero-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,0));
+  color: #e99a06;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 18px 16px 10px 16px;
+  text-shadow: 0 2px 8px #000;
+}
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1d1b1b;
+  color: #ec7f09;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2.2rem;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 12px rgba(213, 203, 203, 0.667);
+}
+.hero-nav.prev { left: 0; }
+.hero-nav.next { right: 0; }
+
+/* Popup styles (reprend ton style existant) */
+.popup {
+  position: fixed; inset: 0; background: rgba(0,0,0,.85);
+  display: flex; align-items: center; justify-content: center; padding: 14px;
+  z-index: 9999;
+}
+.popup-card {
+  width: min(880px, 96vw);
+  background: #181818;
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  max-height: 90vh;
+  overflow: auto;
+}
+.popup-close {
+  position: absolute; top: 8px; right: 8px; background: #000; color: #3e3d3d;
+  border: 1px solid #333; width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.popup-title {
+  margin: 0 40px 10px 6px; font-size: 1.2rem;
+}
+.player {
+  aspect-ratio: 16/9; width: 100%; background: #000; border-radius: 10px; overflow: hidden;
+}
+.player iframe {
+  width: 100%; height: 100%; border: 0;
+}
+@media screen and (max-width: 600px) {
+  .hero-card {
+    width: 240px;
+    height: 160px;
+  }
+  .hero-caption {
+    font-size: 1rem;
+    padding: 12px 10px 8px 10px;
+  }
+  .hero-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  .popup-card {
+    width: 100%;
+    padding: 12px;
+  }
+  .popup-title {
+    font-size: 1rem;
+    margin: 0 36px 8px 4px;
+  }
+  .popup-close {
+    width: 30px; height: 30px; font-size: 1.2rem; top: 6px; right: 6px;
+  }
+  .hero-title {
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+}

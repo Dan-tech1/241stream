@@ -765,6 +765,54 @@ const DATA = {
       categorie: "comedie",
       flags:{ new:true },
     },
+    {
+      title: "Moi quand je me réincarne en Slime - le film",
+      embed: "https://video.sibnet.ru/shell.php?videoid=5112638",
+      thumb: "https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/tensei-shitara-slime-datta-ken.jpg",
+      desc: " Après avoir été tué par un voleur, Satoru Mikami se réincarne dans un monde fantastique en tant que slime doté de pouvoirs uniques. Adoptant le nom de Rimuru Tempest, il décide de fonder une nouvelle nation où toutes les créatures peuvent vivre en harmonie.",
+      categorie: "action",
+      flags:{ top:true },
+    },
+    {
+      title: "Seven Deadly Sins prisoners of the sky",
+      embed: "https://video.sibnet.ru/shell.php?videoid=5310319",
+      thumb: "https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/seven-deadly-sins.jpg",
+      desc: " Dans un monde médiéval fantastique, les Seven Deadly Sins, un groupe de chevaliers légendaires, sont accusés à tort de trahison. Après avoir été dispersés, ils doivent se réunir pour affronter une nouvelle menace qui pèse sur le royaume de Liones.",
+      categorie: "action",
+      flags:{ top:true },
+    },
+    {
+      title: " Blue Exorcist - Saison 1",
+      thumb: "https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/blue-exorcist.jpg",
+      desc: " Rin Okumura découvre qu'il est le fils de Satan et décide de devenir un exorciste pour combattre les forces démoniaques. Avec l'aide de ses amis et de son frère jumeau, Yukio, il s'inscrit à l'Académie des Exorcistes pour maîtriser ses pouvoirs et protéger le monde des démons.",
+      categorie: "horreur",
+      flags:{  },
+      episodes:[
+        { title:"Épisode 1", embed:"https://video.sibnet.ru/shell.php?videoid=4728283" },
+        { title:"Épisode 2", embed:"https://video.sibnet.ru/shell.php?videoid=4728285" },
+        { title:"Épisode 3", embed:"https://video.sibnet.ru/shell.php?videoid=4728287" }
+      ]
+    },
+    {
+      title: "Castlevania - Nocturne - Saison 2",
+      thumb: "https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/castlevania.jpg",
+      desc: " Dans un monde médiéval sombre, Trevor Belmont, un chasseur de vampires, s'allie à Sypha Belnades, une magicienne, et Alucard, le fils de Dracula, pour combattre les",
+      categorie: "horreur",
+      flags:{ new:true },
+      episodes:[
+        { title:"Épisode 1", embed:"https://vidmoly.net/embed-g5g92imv3vv7.html" },
+        { title:"Épisode 2", embed:"https://video.sibnet.ru/shell.php?videoid=5809662" },
+        { title:"Épisode 3", embed:"https://vidmoly.net/embed-zjzf27uzmw6h.html" }
+      ]
+    },
+    {
+      title: "Devilman Crybaby - Saison 1",
+      embed: "https://vidmoly.net/embed-2utqq77susqd.html",
+      thumb: "https://cdn.statically.io/gh/Anime-Sama/IMG/img/contenu/devilman-crybaby.jpg",
+      desc: " Akira Fudo découvre qu'il peut fusionner avec un démon nommé Amon, devenant ainsi Devilman. Avec l'aide de son ami Ryo Asuka, il lutte contre les démons qui menacent l'humanité, tout en affrontant des dilemmes moraux sur la nature du bien et du mal.",
+      categorie: "comedie",
+      flags:{ new:true },
+    }
     // Continue pour tous les animes existants avec categorie
   ]
 };
