@@ -247,6 +247,54 @@ const DATA = {
       desc: "Le quotidien de Sami et de Nada. Si ce dernier s'autoproclame comme le plus grand voyou de la promenade, le second découvre pour la première fois le monde carcéral.",
       flags: {  },
       categorie: "comedie"
+    },
+    {
+       title: "Les Maudites",
+       embed: "https://vidzy.org/embed-qz5z26c35dmp.html",
+        thumb: "https://image.tmdb.org/t/p/w300/zWKg8YbZpw0ZLCOvlr5wmLd6uB3.jpg",
+        desc: "Quelque chose hante Andrea, mais personne, pas même elle, ne peut le voir à l’œil nu. Il y a vingt ans, à dix mille kilomètres de là, la même présence terrorisait Marie...",
+        flags: { new:true },
+        categorie: "horreur"
+    },
+    {
+       title: "Venom 3: The Last Dance",
+       embed: "https://vidzy.org/embed-oiy05tg4lp0c.html",
+        thumb: "https://image.tmdb.org/t/p/w300/c2KKN61jRS5bBcUX1zQa8BoZcHm.jpg",
+        desc: " Eddie et Venom sont en cavale. Chacun est traqué par ses semblables et alors que l'étau se resserre, le duo doit prendre une décision dévastatrice qui annonce la conclusion des aventures d'Eddie et de Venom.",
+        flags: { new:true },
+        categorie: "action"
+    },
+    {
+       title: "Smile 2",
+       embed: "https://vidzy.org/embed-3d94l4kkaak9.html",
+        thumb: "https://image.tmdb.org/t/p/w300/3mjqen3o90Q0S9Rkfg79ZqqPHKl.jpg",
+        desc: "Sur le point d’entamer une nouvelle tournée mondiale, la star planétaire de la pop, Skye Riley, commence à vivre des événements de plus en plus terrifiants et inexplicables.",
+        flags: { top:true },
+        categorie: "horreur"
+    },
+    {
+       title: "Deadpool & Wolverine",
+       embed: "https://vidzy.org/embed-l4jod7kq8g6j.html",
+        thumb: "https://image.tmdb.org/t/p/w300/hw3Gfp8xLpoVewMbFyFVRsqyGlK.jpg",
+        desc: "Un Wade Wilson désabusé s'abrutit de travail dans le civil. Sa vie de mercenaire moralement flexible, Deadpool, est derrière lui. Mais quand son monde est menacé d'anéantissement, il accepte à contrecœur de reprendre le flambeau, et de convaincre un Wolverine...",
+        flags: { new:true },
+        categorie: "action"
+    },
+    {
+       title: "Godzilla x Kong : Le Nouvel Empire ",
+       embed: "https://vidzy.org/embed-db1t36tle2id.html",
+        thumb: "https://image.tmdb.org/t/p/w400/3Po4Ln1ut9g2rIEh5PkVvb7Aoj1.jpg",
+        desc: "Le surpuissant Kong et le redoutable Godzilla sont opposés à une force colossale terrée dans notre monde, qui menace leur existence et la nôtre. Godzilla x Kong : Le nouvel empire approfondit l'histoire de ces titans et leurs origines...",
+        flags: { top:true },
+        categorie: "action"
+    },
+    {
+      title: "Black Adam",
+      embed: "https://vidzy.org/embed-s5tetr7t2ra3.html",
+      thumb: "https://image.tmdb.org/t/p/w400/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
+      desc: "Près de 5000 ans après avoir été doté des pouvoirs tout puissants des dieux égyptiens – et emprisonné très rapidement après – Black Adam est libéré de sa tombe terrestre, prêt à faire régner sa forme unique de justice dans le monde moderne.",
+      flags: {  },
+      categorie: "action"
     }
     // Ajoute la propriété "categorie" pour tous les autres films restants
   ],
@@ -812,6 +860,42 @@ const DATA = {
       desc: " Akira Fudo découvre qu'il peut fusionner avec un démon nommé Amon, devenant ainsi Devilman. Avec l'aide de son ami Ryo Asuka, il lutte contre les démons qui menacent l'humanité, tout en affrontant des dilemmes moraux sur la nature du bien et du mal.",
       categorie: "comedie",
       flags:{ new:true },
+    },
+    {
+      title: "Kung Fu Panda 4",
+      embed: "https://vidzy.org/embed-wkdoanxxigb0.html",
+      thumb: "https://image.tmdb.org/t/p/w300/y8K9wRRv7YK1ACHqaDlMBrNebVU.jpg",
+      desc: "Après trois aventures dans lesquelles le guerrier dragon Po a combattu les maîtres du mal les plus redoutables grâce à un courage et des compétences en arts martiaux inégalés, le destin va de nouveau frapper à sa porte pour l'inviter à enfin se reposer. Mais Po n'est pas du genre à se tourner les pouces, et lorsqu'une nouvelle menace surgit, il doit reprendre du service pour protéger la Vallée de la Paix.",
+      categorie: "action",
+      flags:{ new:true  },
+
+    },
+    {
+      title: "La guerre des dieux",
+      embed: "https://vidzy.org/embed-cjw3rp54cx7o.html",
+      thumb: "https://image.tmdb.org/t/p/w300/tW5dFOemV4d7hxTcVI2bu4u0C9z.jpg",
+      desc: "Autrefois considéré comme un dieu puissant, Yang Jian a été réduit à la condition d’un tueur à gages déchu.",
+      categorie: "action",
+      flags:{ new:true},
+      
+    },
+    {
+      title: "Migration",
+      embed: "https://vidzy.org/embed-dn02nrpvgjov.html",
+      thumb: "https://image.tmdb.org/t/p/w300/3xGLxvuVvLoPhrCxkofkczfR6R5.jpg",
+      desc: "La routine règne chez les Colvert. Si papa Mack préfère garder les siens bien à l’abri dans leur étang de la Nouvelle-Angleterre, maman Pam veut changer les choses et faire découvrir le monde à leurs deux enfants, Dax l’ado et Gwen la cadette.",
+      categorie: "comedie",
+      flags:{ top:true },
+      
+    },
+    {
+      title: "Sonic 2, le film",
+      embed: "https://vidzy.org/embed-a6cpttr8kyil.html",
+      thumb: "https://image.tmdb.org/t/p/w400/7RSCL6V8BlekgVnNPok6tLW50tP.jpg",
+      desc: "Bien installé dans la petite ville de Green Hills, Sonic veut maintenant prouver qu’il a l’étoffe d' un véritable héros. Un défi de taille se présente à lui quand le Dr Robotnik refait son apparition.",
+      categorie: "horreur",
+      flags:{  },
+      
     }
     // Continue pour tous les animes existants avec categorie
   ]

@@ -109,6 +109,7 @@
   margin-bottom: 20px;
   font-weight: 900;
   text-align: center;
+  box-shadow: 0 4px 8px #000;
 }
 .hero-row {
   display: flex;
@@ -119,8 +120,8 @@
 }
 .hero-card {
   flex: 0 0 auto;
-  width: 340px;
-  height: 220px;
+  width: 350px;
+  height: 440px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 32px #000a;
@@ -141,7 +142,7 @@
 .hero-caption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,0));
+  background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0, 0, 0, 0.56));
   color: #e99a06;
   font-size: 1.15rem;
   font-weight: 700;
@@ -199,8 +200,8 @@
 }
 @media screen and (max-width: 600px) {
   .hero-card {
-    width: 240px;
-    height: 160px;
+    width: 220px;
+    height: 360px;
   }
   .hero-caption {
     font-size: 1rem;
