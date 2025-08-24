@@ -162,6 +162,8 @@ footer a:hover{text-decoration:underline}
   .nav-links ul.show{display:flex}
   .search-form input{width:120px}
   .card{width:40vw; max-width:220px}
+  .brand{font-size:0.8rem}
+  .menu-toggle{font-size:20px}
 }
 @media (max-width:600px){
   body{padding-top:82px}
