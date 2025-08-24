@@ -169,7 +169,8 @@ footer a:hover{text-decoration:underline}
   .thumb{height:50vw; min-height:140px}
   .modal-player iframe{height:200px}
   .logo img{height:28px; width:28px}
-  .brand{font-size:0.7rem}
+  .brand{font-size:0.8rem}
+  .menu-toggle{font-size:20px}
 }
 
 
