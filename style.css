@@ -144,8 +144,9 @@ footer{
 footer ul{list-style:none; padding:0; margin:0 0 10px; display:flex; gap:16px; justify-content:center}
 footer a{color:var(--accent); text-decoration:none; font-weight:800}
 footer p{
-  margin:0; font-size:0.6rem; color:var(--muted); line-height:1.4;
+  margin:0; font-size:0.7rem; color:var(--muted); line-height:1.4;
   max-width:600px; margin:auto; padding:0 20px;
+  box-shadow: 0 -2px 8px rgb(128, 126, 126);
 }
 footer a:hover{text-decoration:underline}
 .social-icons{display:flex; justify-content:center; gap:14px; margin-top:10px}
@@ -163,7 +164,6 @@ footer a:hover{text-decoration:underline}
   .search-form input{width:100px; margin-right:2px;}
   .card{width:40vw; max-width:220px}
   .brand{font-size:0.8rem}
-  .menu-toggle{font-size:20px}
 }
 @media (max-width:600px){
   body{padding-top:82px}

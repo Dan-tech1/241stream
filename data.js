@@ -14,8 +14,8 @@ const DATA = {
       embed: "https://Uqload.cx/embed-k6ougmdhes6o.html",
       thumb: "https://image.tmdb.org/t/p/w400/zjrDE4agtUL3xGEVAlN0SkCjbuk.jpg",
       desc: "Alexandra, une étudiante pétillante, retourne vivre avec ses colocataires, Jessica et Breanne, pour la rentrée universitaire. Après une nuit de fête et de débauche, Alex accepte de voir une voyante pour en savoir plus sur son avenir avec son petit-copain, Brian, mais la séance se transforme en cauchemar quand celle-ci fait des allusions à la présence d’un esprit malveillant. Quand la jeune fille se réveille le lendemain, elle ne se rappelle de rien...",
-      rating:7.5,
-      categorie: "horreur"
+      categorie: "horreur",
+      flags: { new:true }
     },
     {
       title: "Superman 2025",
