@@ -29,6 +29,12 @@
     font-size: 0.8rem;
     margin: 10px 0;
   }
+  .strong {
+    color: #c0590a;
+    font-size: 0.5rem;
+    font-weight: bold;
+    
+  }
   .popup-box ul {
     list-style: none;
     padding: 0;
