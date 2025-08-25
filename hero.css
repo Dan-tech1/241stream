@@ -236,3 +236,27 @@
   }
   
 }
+
+.baner {
+  width: 100%;                 /* toujours prendre toute la largeur */
+  max-height: 200px;           /* limite la hauteur maximale */
+  height: auto;                /* hauteur automatique selon l'image */
+  background: url('https://i.postimg.cc/3x3QzSGq/baner.png') no-repeat center center;
+  background-size: cover;      /* l'image couvre entièrement le conteneur */
+  margin: 50px 0 10px 0;       /* margin-top:50px ; margin-bottom:10px */
+  box-shadow: 0 4px 8px #e1dede; /* ombre portée */
+  border-radius: 12px;        /* coins arrondis */
+}
+
+/* Optionnel : ajustements pour écrans très petits */
+@media screen and (max-width: 768px) {
+  .baner {
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .baner {
+    max-height: 120px;
+  }
+}
