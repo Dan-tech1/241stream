@@ -2,6 +2,13 @@
 const DATA = {
   films: [
     {
+      title: "Hunger Games : La Ballade du serpent et de l'oiseau chanteur",
+      embed: "https://vidzy.org/embed-mkwda1yhmx5b.html",
+      thumb: "https://image.tmdb.org/t/p/w300/q4EDvPcf956FgakWwcXiWdQEgxU.jpg",
+      desc: "Le jeune Coriolanus est le dernier espoir de sa lignée, la famille Snow autrefois riche et fière est aujourd’hui tombée en disgrâce dans un Capitole d'après-guerre.",
+      categorie: "action"
+    },
+    {
       title: "Death of a Unicorn",
       embed: "https://vidzy.org/embed-rhuysex3xn10.html",
       thumb: "https://image.tmdb.org/t/p/w300/s1q08ciejMW84z839SdwC47QK6a.jpg",
@@ -696,18 +703,18 @@ const DATA = {
       ]
     },
     {
-      title: "",
-      thumb: "",
-      desc: "",
+      title: "Twisted Metal - Saison 2",
+      thumb: "https://image.tmdb.org/t/p/w500/zMwMClR9y7RBeVWMEmNn8LwUJHz.jpg",
+      desc: "Un homme peut voir son mode de vie s'améliorer s’il accepte de livrer un colis en traversant une contrée sauvage et désolée. Seulement sur le trajet, il faudra compter sur le terrifiant Sweet Tooth et son camion, qui viendront perturber le parcours pour donner lieu à des combats entre véhicules.",
       categorie: "comedie",
       flags: {  },
       episodes: [
-        { title: "Épisode 1", embed: "" },
-        { title: "Épisode 2", embed: "" },
-        { title: "Épisode 3", embed: "" },
-        { title: "Épisode 4", embed: "" },
-        { title: "Épisode 5", embed: "" },
-        { title: "Épisode 6", embed: "" }
+        { title: "Épisode 1", embed: "https://vidzy.org/embed-mrmrdwvlkxtv.html" },
+        { title: "Épisode 2", embed: "https://vidzy.org/embed-t458j4zoaz6c.html" },
+        { title: "Épisode 3", embed: "https://vidzy.org/embed-5fymaku9wgci.html" },
+        { title: "Épisode 4", embed: "https://vidzy.org/embed-zekhex3uono5.html" },
+        { title: "Épisode 5", embed: "https://vidzy.org/embed-tnydetalbafw.html" },
+        { title: "Épisode 6", embed: "https://vidzy.org/embed-j033fon8k6fo.html" }
       ]
     },
 
