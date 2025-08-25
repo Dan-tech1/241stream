@@ -286,3 +286,20 @@ body {
 img {
   pointer-events: none;
 }
+
+
+
+ 
+
+#ad-bubble {
+    position: fixed;
+    bottom: 1px;   /* distance du bas */
+    right: 20px;    /* distance du côté droit */
+    width: 120px;   /* largeur de la bulle/carré */
+    height: 120px;  /* hauteur de la bulle/carré */
+    background: #f1f1f1; /* couleur de fond au cas où */
+    border-radius: 12px; /* arrondi pour faire bulle */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden; /* cache ce qui dépasse */
+    z-index: 9999;
+}
