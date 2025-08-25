@@ -93,6 +93,9 @@ main{min-height:60vh}
 .card {
   outline: 2px solid rgb(115, 109, 23) !important;
 }
+main{
+  box-shadow: 2px 2px 8px rgb(238, 235, 235);
+}
 
 .card:hover{transform:scale(1.04) translateY(-4px); box-shadow:0 8px 24px #000b}
 .thumb{

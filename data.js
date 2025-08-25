@@ -10,6 +10,46 @@ const DATA = {
       categorie: "action"
     },
     {
+      title: "Thor : Ragnarok ",
+      embed: "https://vidzy.org/embed-zv30gmmpco1g.html",
+      thumb: "https://image.tmdb.org/t/p/w400/jfAFkGetZEBNIwPubR0JG3k7Zkt.jpg",
+      desc: "Thor est emprisonné de l’autre côté de l’univers sans son puissant marteau et se retrouve engagé dans une course contre le temps pour rejoindre Asgard et arrêter Ragnarok – la destruction de son monde natal et la fin de la civilisation Asgardienne...",
+      categorie: "action",
+      flags: { top:true }
+    },
+    {
+      title: "Massacre à la tronçonneuse - 2022",
+      embed: "https://uqload.cx/embed-64wtddaonodb.html",
+      thumb: "https://image.tmdb.org/t/p/w400/7sKiGNWFM15WNyY7LYd5vmb3brO.jpg",
+      desc: "Resté caché pendant près de 50 ans, Leatherface revient terroriser un groupe de jeunes amis idéalistes qui perturbent sans le vouloir son univers protégé dans une petite ville du Texas.",
+      categorie: "horreur",
+      flags: {  }
+    },
+    {
+      title: "Captain America : Brave New World - 2025",
+      embed: "https://uqload.cx/embed-49l6a88sjjyw.html",
+      thumb: "https://image.tmdb.org/t/p/w300/wDRXmiAEJdhNIcuetM4016fOCx8.jpg",
+      desc: " Après les événements de Avengers: Endgame, Sam Wilson, l'ancien Faucon, doit assumer le rôle de Captain America dans un monde en constante évolution.",
+      categorie: "action",
+      flags: {  }
+    },
+    {
+      title: "Borderlands",
+      embed: "https://uqload.cx/embed-wkuw3v39wrkq.html",
+      thumb: "https://image.tmdb.org/t/p/w300/6qpvOV6CKHDJoYvWEtTLyuVIwuP.jpg",
+      desc: " Dans un futur lointain, sur la planète Pandora, une chasseuse de trésors nommée Lilith fait équipe avec un groupe de marginaux pour retrouver un coffre légendaire renfermant une technologie extraterrestre aux pouvoirs inimaginables. Ensemble, ils affrontent des bandits, des créatures mutantes et des corporations sans scrupules dans une quête épique pour sauver Pandora et découvrir les secrets du coffre.",
+      categorie: "comedie",
+      flags: { top:true}
+    },
+    {
+      title: "Wonka",
+      embed: "https://vidzy.org/embed-urjfpce5axb7.html",
+      thumb: "https://image.tmdb.org/t/p/w300/aKK2C3SErXIhNdT9gI93as2b8GV.jpg",
+      desc: " L'histoire de Willy Wonka et comment il a rencontré les Oompa-Loompas sur l'île mystérieuse.",
+      categorie: "comedie",
+      flags: {  new:true }
+    },
+    {
       title: "Devil Seed",
       embed: "https://Uqload.cx/embed-k6ougmdhes6o.html",
       thumb: "https://image.tmdb.org/t/p/w400/zjrDE4agtUL3xGEVAlN0SkCjbuk.jpg",
