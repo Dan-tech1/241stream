@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://241stream.netlify.app/sitemap.xml
+Sitemap: https://241stream.online/sitemap.xml
