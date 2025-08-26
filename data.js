@@ -201,6 +201,39 @@ const DATA = {
       categorie: "comedie"
     },
     {
+      title: "Jusqu'en enfer",
+      embed: "https://uqload.cx/embed-v502wttnvrop.html",
+      thumb: "https://image.tmdb.org/t/p/w400/fdyejM5Zd6dsa0YyWa02ZAKwQzK.jpg",
+      desc: "Christine Brown, spécialiste en crédit immobilier, vit à Los Angeles avec son petit ami, le Professeur Clay Dalton. Tout va pour le mieux jusqu’au jour où la mystérieuse Mme Ganush débarque à la banque...",
+      flags: {top:true},
+      categorie: "horreur"
+      
+    },
+    {
+      title: "Gladiator II",
+      embed: "https://vidzy.org/embed-0q1jjkg9xd9b.html",
+      thumb: "https://image.tmdb.org/t/p/w300/sUnGXbEdXlgHlK3EkmB5w2NiLlc.jpg",
+      desc: "Des années après avoir assisté à la mort du héros vénéré Maximus aux mains de son oncle, Lucius est forcé d'entrer...",
+      flags: {},
+      categorie: "action"
+    },
+    {
+      title: "The Marvels",
+      embed: "https://vidzy.org/embed-xo8ms6iqfgi4.html",
+      thumb: "https://image.tmdb.org/t/p/w300/mqAQO6j5gkq6iwCXNbXpzf0RXBU.jpg",
+      desc: "Carol Danvers, alias Captain Marvel, a récupéré son identité auprès du tyrannique Kree et s'est vengée du renseignement suprême. Cependant, des conséquences inattendues la voient assumer le fardeau d'un univers déstabilisé.",
+      flags: {},
+      categorie: "action",
+    },
+     {
+      title: "Ouija - 2014",
+      embed: "https://uqload.cx/embed-yhv8dgwzm87l.html",
+      thumb: "https://image.tmdb.org/t/p/w400/gwjHlGjK2xXKpjd65BWyAMwzTWC.jpg",
+      desc: "Alors que Debbie meurt mystérieusement dans sa maison, cinq amis utilisent la planchette ouija pour la contacter...",
+      flags: {top:true},
+      categorie: "horreur"
+    },
+    {
       title: "War of Apes",
       embed: "https://uqload.cx/embed-31794bbep0p9.html",
       thumb: "https://image.tmdb.org/t/p/w300/i9UF3fRPEMIKGKTttJ7uwOKt7Ff.jpg",
