@@ -9,6 +9,70 @@ const DATA = {
       categorie: "action"
     },
     {
+      title: "John Wick 4",
+      embed: "https://vidzy.org/embed-ya0xx2xsyqnf.html",
+      thumb: "https://image.tmdb.org/t/p/w400/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+      desc: "John Wick affronte ses adversaires les plus redoutables dans ce quatrième volet de la série. De New York à Osaka, en passant par Paris et Berlin, John Wick mène un combat contre la Grande Table, la terrible organisation criminelle qui a mis sa tête à prix...",
+      flags: {},
+      categorie: "action"
+    },
+    {
+      title: "Scream 6",
+      embed: "https://vidzy.org/embed-tjhnagjylrzg.html",
+      thumb: "https://image.tmdb.org/t/p/w400/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
+      desc: "Après avoir frappé à trois reprises à Woodsboro, après avoir terrorisé le campus de Windsor et les studios d’Hollywood, Ghostface a décidé de sévir dans Big Apple, mais dans une ville aussi grande que New York personne ne vous entendra crier…",
+      flags: {new:true},
+      categorie: "horreur"
+    },
+    {
+      title: "Prey - 2022",
+      embed: "https://vidzy.org/embed-nruchfn0bl0h.html",
+      thumb: "https://image.tmdb.org/t/p/w400/q1iAcSSVdFusqexsK7qlhtyp2m5.jpg",
+      desc: "Lorsque le danger menace son camp, la féroce et très habile guerrière Comanche Naru se met en route pour protéger son peuple. Mais la proie qu'elle traque s'avère être un prédateur extraterrestre très évolué doté d'un arsenal techniquement avancé.",
+      flags: {},
+      categorie: "horreur"
+    },
+    {
+      title: "Les Animaux fantastiques : Les Secrets de Dumbledore - 2022",
+      embed: "https://uqload.cx/ut1shtg1jrp2.html",
+      thumb: "https://image.tmdb.org/t/p/w400/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg",
+      desc: "Le professeur Albus Dumbledore sait que le puissant mage noir Gellert Grindelwald cherche à prendre le contrôle du monde des sorciers. Incapable de l’empêcher d’agir seul, il sollicite le magizoologiste Norbert Dragonneau pour qu’il réunisse des sorciers...",
+      flags: {top:true},
+      categorie: "action"
+    },
+    {
+      title: "Avatar : La Voie de l'eau - 2022",
+      embed: "https://vidzy.org/embed-o1jawb7xkofc.html",
+      thumb: "https://image.tmdb.org/t/p/w400/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      desc: "Une dizaine d'années s'est écoulée depuis les précédents évènements survenus sur Pandora. Jake Sully et Neytiri sont devenus parents. Leur vie idyllique, proche de la nature, est menacée lorsque la « Ressources Développement Administration », dangereuse organisation non-gouvernementale, est de retour sur Pandora. Contraints de quitter leur habitat naturel, Jake et sa famille se rendent sur les récifs, où ils pensent trouver asile. Mais ils tombent sur un clan, les Metkayina, aux mœurs différentes des leurs.",
+      flags: {new:true},
+      categorie: "action"
+    },
+    {
+      title: "Black Panther : Wakanda Forever",
+      embed: "https://vidzy.org/embed-y0mkdosqe59l.html",
+      thumb: "https://image.tmdb.org/t/p/w400/rNTKgJdJ8tyfpiUug5ittECK8CS.jpg",
+      desc: "La Reine Ramonda, Shuri, M’Baku, Okoye et les Dora Milaje luttent pour protéger leur nation des ingérences d’autres puissances mondiales après la mort du roi T’Challa. Alors que le peuple s’efforce d’aller de l’avant, nos héros vont devoir s’unir et compter sur l’aide de la mercenaire Nakia et d’Everett Ross pour faire entrer le royaume du Wakanda dans une nouvelle ère. Mais une terrible menace surgit d’un royaume caché au plus profond des océans : Talokan.",
+      flags: {},
+      categorie: "action"
+    },
+    {
+      title: "Venom : Let There Be Carnage",
+      embed: "https://vidzy.org/embed-1vsdk65zzyex.html",
+      thumb: "https://image.tmdb.org/t/p/w400/uhtZdw7rsBHlALoyMT8rtCVBbMj.jpg",
+      desc: "Environ un an après avoir affronté Riot, Eddie Brock « cohabite » toujours avec le symbiote Venom. Alors qu’il tente de relancer sa carrière de journaliste d'investigation, Eddie se rend en prison pour interviewer le tueur en série Cletus Kasady. Il ignore que ce dernier est lui aussi l'hôte d'un symbiote, Carnage.",
+      flags: {},
+      categorie: "action"
+    },
+    {
+      title: "Morbius - 2022",
+      embed: "https://vidzy.org/embed-6t5w2odvaaz1.html",
+      thumb: "https://image.tmdb.org/t/p/w400/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+      desc: "Gravement atteint d’une rare maladie sanguine, et déterminé à sauver toutes les victimes de cette pathologie, le Dr Morbius tente un pari désespéré. Mais ce qui semble à première vue être un succès se révèle rapidement comme un remède potentiellement plus grave...",
+      flags: {},
+      categorie: "horreur"
+    },
+    {
       title: "Death of a Unicorn",
       embed: "https://vidzy.org/embed-rhuysex3xn10.html",
       thumb: "https://image.tmdb.org/t/p/w300/s1q08ciejMW84z839SdwC47QK6a.jpg",

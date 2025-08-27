@@ -177,9 +177,6 @@ footer a:hover{text-decoration:underline}
   .brand{font-size:0.8rem}
   .menu-toggle{font-size:20px}
 }
-
-
-
 /* Conteneur général */
 .native-banner {
   width: 100%;
@@ -187,7 +184,6 @@ footer a:hover{text-decoration:underline}
   margin: 10px auto; /* centré avec un peu d’espace autour */
   text-align: center;
 }
-
 /* S’assure que le contenu de la bannière est responsive */
 .native-banner iframe,
 .native-banner > div {
@@ -198,22 +194,17 @@ footer a:hover{text-decoration:underline}
 .native-banner {
   margin: 15px auto;
 }
-
-
 /* Media queries */
 @media (max-width: 768px) { /* Tablette */
   .native-banner {
     max-width: 90%;
   }
 }
-
 @media (max-width: 480px) { /* Mobile */
   .native-banner {
     max-width: 100%;
   }
 }
-
-
 /* Conteneur de la bannière mince */
 .ad-banner {
   width: 100%;
@@ -244,15 +235,11 @@ footer a:hover{text-decoration:underline}
     max-width: 320px; /* format mobile */
   }
 }
-
-
 .hr {
   border: none;
   border-top: 0.5px solid rgb(44, 44, 109);
   margin: 20px 0;
 }
-
-
 .pub-section {
   display: flex;
   justify-content: center;
@@ -268,7 +255,6 @@ footer a:hover{text-decoration:underline}
   display: flex;
   justify-content: center;
 }
-
 /* 📱 Mobile : chaque pub prend toute la largeur */
 @media (max-width: 768px) {
   .pub-box {
@@ -281,7 +267,6 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-
 /* Empêche le glisser-déposer d’images */
 img {
   pointer-events: none;

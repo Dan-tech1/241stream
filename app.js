@@ -156,14 +156,12 @@ function buildHome(){
   renderRow(qs('#row-news'), news);
   renderRow(qs('#row-recos'), recos);
 }
-
 /* ===== Init ===== */
 window.addEventListener('DOMContentLoaded', ()=>{
   setupMenu();
   setupSearch();
   if(document.body.dataset.page==='home') buildHome();
 });
-
 
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
