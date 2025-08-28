@@ -28,4 +28,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Pages légales et informations -->
+  <url>
+    <loc>https://241stream.online/about.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://241stream.online/privacy.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://241stream.online/terms.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://241stream.online/dmca.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

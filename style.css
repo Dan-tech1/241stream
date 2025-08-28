@@ -67,10 +67,16 @@ main{min-height:60vh}
   border-left:4px solid var(--accent); padding-left:10px;
 }
 .section p{
-  margin:0; color:var(--muted); font-weight:600; font-size:.85rem; line-height:1.4;
-  max-width:600px; padding-right:80px;
+  margin:0; color:var(--text); font-weight:600; font-size:.80rem; line-height:1.4;
+  max-width:600px; padding-right:80px; text-decoration: none;
 }
-
+.section ul{
+  margin:0; color:var(--text); font-weight:600; font-size:.80rem; line-height:1.4;
+  max-width:600px; padding-right:80px; text-decoration: none;
+}
+strong{
+  color: var(--accent);
+}
 .view-more a{color:var(--accent); text-decoration:none; font-weight:700}
 .view-more a:hover{opacity:.85}
 
@@ -144,7 +150,7 @@ main{
 footer{
   background:var(--bg-2); color:#fff; text-align:center; padding:34px 20px; margin-top:36px; box-shadow:0 -2px 8px #0008;
 }
-footer ul{list-style:none; padding:0; margin:0 0 10px; display:flex; gap:16px; justify-content:center}
+footer ul{list-style:none; padding:0; margin:0 0 10px; display:flex; font-size: 0.7rem; gap:16px; justify-content:center}
 footer a{color:var(--accent); text-decoration:none; font-weight:800}
 footer p{
   margin:0; font-size:0.7rem; color:var(--muted); line-height:1.4;
@@ -176,6 +182,7 @@ footer a:hover{text-decoration:underline}
   .logo img{height:28px; width:28px}
   .brand{font-size:0.8rem}
   .menu-toggle{font-size:20px}
+  footer ul{ font-size: 0.7rem; font-family: Arial, Helvetica, sans-serif;}
 }
 /* Conteneur général */
 .native-banner {
@@ -270,5 +277,12 @@ body {
 /* Empêche le glisser-déposer d’images */
 img {
   pointer-events: none;
+}
+/*DMCA*/
+.dmca{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 50px;
 }
 
