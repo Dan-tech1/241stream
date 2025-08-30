@@ -1,5 +1,11 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
 
+# Bloque tout par défaut
+Disallow: /
+
+# Autorise uniquement les pages principales à être crawlé
+Allow: /index.html
+Allow: /films.html
+
+# Sitemap pour Google
 Sitemap: https://241stream.online/sitemap.xml
