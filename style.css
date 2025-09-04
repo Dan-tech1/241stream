@@ -285,4 +285,37 @@ img {
   font-size: 1.2rem;
   margin-top: 50px;
 }
+/* =========================
+   RESPONSIVE : grands écrans (TV, placemat, 2K, 4K)
+========================= */
+
+/* Full HD (1920px et +) */
+@media screen and (min-width: 1920px) {
+  body { font-size: 20px; /* texte plus lisible */}
+  .hero-card {width: 240px; /* images plus larges */}
+  .player iframe {  height: 600px; /* vidéo plus grande */}
+  header {padding: 1.5rem 4rem;}
+  header nav a { font-size: 1.2rem; margin: 0 1.5rem;}
+  .logo { font-size: 1.8rem; }}
+
+/* 2K (2560px et +) */
+@media screen and (min-width: 2560px) {
+  body {  font-size: 22px; }
+.hero-card { width: 300px;}
+.player iframe {  height: 720px;}
+header { padding: 2rem 6rem; }
+header nav a { font-size: 1.5rem; margin: 0 2rem; }
+  .logo {  font-size: 2.2rem;}
+  .section { padding: 3rem 6rem; /* marges plus larges */}}
+
+/* 4K (3840px et +) */
+@media screen and (min-width: 3840px) {  body {
+    font-size: 26px; }
+  .hero-card {  width: 360px;}
+  .player iframe { height: 900px;}
+  .section {  padding: 4rem 8rem;}
+  header { padding: 3rem 8rem;}
+  header nav a { font-size: 1.8rem; margin: 0 2.5rem;}
+  .logo { font-size: 2.6rem;}
+  .header-content { max-width: 3000px; margin: auto;}}
 
