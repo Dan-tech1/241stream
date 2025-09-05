@@ -1,9 +1,9 @@
 /* ====== Base / Reset ====== */
 * { box-sizing: border-box; }
 :root{
-  --bg:#0c0c0de2; --bg-2:#0b0b0b; --card:#242327;
+  --bg:#0c0c0de2; --bg-2:#0b0b0bdb; --card:#242327;
   --accent:#e5d309; --text:#fff; --muted:#b9b9b9;
-  --radius:18px; --radius-lg:28px; --shadow:0 2px 16px rgba(0, 0, 0, 0.888);
+  --radius:18px; --radius-lg:28px; --shadow:0 2px 16px rgb(0, 0, 0);
 }
 html,body{height:100%}
 body{
@@ -15,7 +15,7 @@ body{
 /* ====== Header ====== */
 header{
   position:fixed; inset:0 0 auto 0; height:auto; z-index:100;
-  background:var(--bg-2); box-shadow:0 2px 12px rgba(0, 0, 0, 0.319);
+  background:var(--bg-2); box-shadow:0 2px 12px rgba(0, 0, 0, 0.84);
 }
 .header-content{
   max-width:1200px; margin:auto; padding:20px 18px;

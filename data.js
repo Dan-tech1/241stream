@@ -9,6 +9,41 @@ const DATA = {
       categorie: "action"
     },
     {
+      title: "Beetlejuice Beetlejuice",
+      embed: "https://vidzy.org/embed-oda2etsb5t88.html",
+      thumb: "https://image.tmdb.org/t/p/w300/4M8fnQF821aVFBbhLdTQGf4j4W9.jpg",
+      desc: "À la suite d'une tragédie familiale inattendue, trois générations de la famille Deetz rentrent dans leur maison à Winter River, toujours hantée par Beetlejuice. Là-bas, Lydia voit sa vie prendre un nouveau tournant lorsque Astrid, sa fille en plein âge rebelle, découvre la mystérieuse maquette de la ville et que le portail vers l'au-delà s'ouvre accidentellement.",
+      flags: {new:true},
+      categorie: "comedie"
+
+    },
+    {
+      title: "Le voyage du Dr Dolittle",
+      embed: "https://vidzy.org/embed-ovl3hzqcv3bf.html",
+      thumb: "https://image.tmdb.org/t/p/w300/dSFLgSQffeAgJWhVlH3HBTWVPYe.jpg",
+      desc: "Après la perte de sa femme sept ans plus tôt, l’excentrique Dr. John Dolittle, célèbre docteur et vétérinaire de l’Angleterre de la Reine Victoria s’isole derrière les murs de son manoir, avec pour seule compagnie sa ménagerie d’animaux exotiques. Mais quand la jeune Reine tombe gravement malade, Dr. Dolittle, d’abord réticent, se voit forcé de lever les voiles vers une île mythique dans une épique aventure à la recherche d’un remède à la maladie.",
+      flags: { top:true},
+      categorie:"comedie",
+
+    },
+    {
+      title: "Happy Birthdead 2 You",
+      embed: "https://uqload.cx/zypoezvb4g7i.html",
+      thumb: "https://image.tmdb.org/t/p/w400/4tdnePOkOOzwuGPEOAHp8UA4vqx.jpg",
+      desc: "Alors que Tree pensait s’être définitivement débarrassée de celle qui voulait sa mort et qu’elle file le parfait amour avec Carter, elle se retrouve projetée dans une dimension parallèle à notre monde. Elle doit désormais affronter des fantômes de son passé et de nouveaux ennemis…",
+      flags: {top:true},
+      categorie:"horreur"
+
+    },
+    {
+      title: "Creed III",
+      embed: "https://vidzy.org/embed-5dq1ppayh0hr.html",
+      thumb: "https://image.tmdb.org/t/p/w400/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg",
+      desc: "Après avoir dominé le monde de la boxe, Adonis Creed s'épanouit tant dans sa carrière que dans sa vie de famille. Lorsqu'un ami d'enfance et ancien prodige de la boxe, Damian Anderson, refait surface après avoir purgé une longue peine de prison, il est impatient de prouver qu'il mérite sa chance sur le ring. Le face-à-face entre les anciens amis est plus qu'un simple combat. Pour régler ses comptes, Adonis doit mettre son avenir en jeu pour affronter Damian - un boxeur qui n'a rien à perdre.",
+      flags: {new:true},
+      categorie: "action",
+    },
+    {
       title: "John Wick 4",
       embed: "https://vidzy.org/embed-ya0xx2xsyqnf.html",
       thumb: "https://image.tmdb.org/t/p/w400/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",

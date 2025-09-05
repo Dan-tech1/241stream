@@ -165,7 +165,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
-    alert("Le clic droit est désactivé sur ce site.");
+    alert("Action interdit");
 }, false);
 
 // Bloquer certaines touches (F12, Ctrl+U, Ctrl+Shift+I)
