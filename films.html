@@ -89,6 +89,16 @@
 </div>
 <hr class="hr">
 
+  <!-- À placer dans <main> où tu veux la section accueil -->
+<section class="hero-carousel">
+  <h1 class="hero-title">241stream — Films populaires</h1>
+  <div class="hero-row" id="hero-row">
+    <!-- Les miniatures seront injectées par JS -->
+  </div>
+  <button class="hero-nav prev" aria-label="Précédent">‹</button>
+  <button class="hero-nav next" aria-label="Suivant">›</button>
+</section>
+
   <section class="section">
     <div class="section-head"><h2>Tous les films</h2></div>
     <div id="row-films" class="row"></div>
@@ -144,7 +154,108 @@ window.addEventListener('DOMContentLoaded', ()=>{
   renderRow(document.getElementById('row-comedie'), DATA.films.filter(f=>f.categorie==="comedie"));
 });
 </script>
+ <script>
+  // Exemple de films (remplace par tes vrais films)
+const HERO_FILMS = [
+  {
+    title: "Mercredi - Saison 2",
+    img: "https://image.tmdb.org/t/p/w500/aamw6JjKwTy6bdviyIcFKekSD6x.jpg", 
+    alt: "Image - Mercredi saison 2",
+    embed: "https://vidzy.org/embed-13tykdejmbak.html"
+  },
+  {
+    title: "Superman 2025",
+    img: "https://image.tmdb.org/t/p/w300/60vQyjChlll1MwFtRQ10NWpUYmw.jpg", alt: "Image ",
+    embed: "https://vidzy.org/embed-076h16h1kg5r.html"
+  },
+  {
+    title: "Hérédité",
+    img: "https://image.tmdb.org/t/p/w400/5Bz0u7xEyOUnGi4ov3rZKqKYCuH.jpg",
+    embed: "https://vidzy.org/embed-c5oft2hfrc28.html"
+  },
+  {
+    title: "Lucifer - Saison 3",
+    img: "https://image.tmdb.org/t/p/w400/r17s6nDPV4smuHVRyDPA36tZeC3.jpg",
+    embed: "https://vidzy.org/embed-8tdog7hxqli2.html"
+  },
+  {
+    title: "Donjons & Dragons : L'Honneur des voleurs",
+    img: "https://image.tmdb.org/t/p/w400/A7AoNT06aRAc4SV89Dwxj3EYAgC.jpg",
+    embed: "https://vidzy.org/embed-7wqisngbsbxb.html"
+  }
+];
 
+function renderHeroCarousel() {
+  const row = document.getElementById("hero-row");
+  if (!row) return;
+  row.innerHTML = "";
+  HERO_FILMS.forEach(film => {
+    const card = document.createElement("div");
+    card.className = "hero-card";
+    card.innerHTML = `
+      <img src="${film.img}" alt="${film.title}" class="hero-thumb">
+      <div class="hero-caption">${film.title}</div>
+    `;
+    card.addEventListener("click", () => {
+      // Ouvre le popup vidéo
+      openHeroPopup(film);
+    });
+    row.appendChild(card);
+  });
+}
+renderHeroCarousel();
+
+// Navigation
+let heroScroll = 0;
+document.querySelector(".hero-nav.prev").onclick = () => {
+  heroScroll -= 1;
+  scrollHeroRow();
+};
+document.querySelector(".hero-nav.next").onclick = () => {
+  heroScroll += 1;
+  scrollHeroRow();
+};
+function scrollHeroRow() {
+  const row = document.getElementById("hero-row");
+  if (!row) return;
+  const cards = row.querySelectorAll(".hero-card");
+  const maxScroll = cards.length - 1;
+  heroScroll = Math.max(0, Math.min(heroScroll, maxScroll));
+  row.scrollTo({
+    left: heroScroll * (cards[0].offsetWidth + 24),
+    behavior: "smooth"
+  });
+}
+
+// Popup vidéo
+function openHeroPopup(film) {
+  let popup = document.getElementById("hero-popup");
+  if (!popup) {
+    popup = document.createElement("div");
+    popup.id = "hero-popup";
+    popup.className = "popup";
+    popup.innerHTML = `
+      <div class="popup-card">
+        <button class="popup-close" aria-label="Fermer">✕</button>
+        <h3 class="popup-title">${film.title}</h3>
+        <div class="player">
+          <iframe src="${film.embed}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(popup);
+    popup.querySelector(".popup-close").onclick = () => {
+      popup.remove();
+    };
+    popup.onclick = e => {
+      if (e.target === popup) popup.remove();
+    };
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") popup.remove();
+    }, { once: true });
+  }
+}
+ </script>
 
 </body>
 </html>
