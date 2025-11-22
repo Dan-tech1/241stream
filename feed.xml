@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>241stream - Nouveautés Films et Séries</title>
+    <link>https://241stream.online</link>
+    <description>Dernières nouveautés en streaming gratuit sur 241stream</description>
+    <language>fr</language>
+    <copyright>Copyright 2025 241stream</copyright>
+    <atom:link href="https://241stream.online/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>2025-01-14T10:00:00Z</lastBuildDate>
+    
+    <item>
+      <title>Conjuring : L'Heure du jugement - 2025</title>
+      <link>https://241stream.online/film/conjuring-heure-jugement</link>
+      <description>Nouveau film d'horreur disponible en streaming</description>
+      <pubDate>2025-01-14T09:00:00Z</pubDate>
+      <guid>https://241stream.online/film/conjuring-heure-jugement</guid>
+      <category>Film</category>
+      <category>Horreur</category>
+    </item>
+    
+    <item>
+      <title>Superman 2025</title>
+      <link>https://241stream.online/film/superman-2025</link>
+      <description>Nouvelle version de Superman en streaming</description>
+      <pubDate>2025-01-13T15:30:00Z</pubDate>
+      <guid>https://241stream.online/film/superman-2025</guid>
+      <category>Film</category>
+      <category>Action</category>
+    </item>
+    
+    <item>
+      <title>Lucifer - Saison 3</title>
+      <link>https://241stream.online/serie/lucifer-saison-3</link>
+      <description>Nouvelle saison de Lucifer disponible</description>
+      <pubDate>2025-01-12T11:20:00Z</pubDate>
+      <guid>https://241stream.online/serie/lucifer-saison-3</guid>
+      <category>Série</category>
+      <category>Fantastique</category>
+    </item>
+  </channel>
+</rss>
