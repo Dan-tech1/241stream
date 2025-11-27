@@ -4,14 +4,15 @@
   <Description>Rechercher sur 241stream - Films, séries et animes</Description>
   <Tags>films series animes streaming</Tags>
   <Contact>contact@241stream.online</Contact>
-  <Url type="text/html" method="get" template="https://241stream.online/recherche?q={searchTerms}"/>
-  <Url type="application/rss+xml" method="get" template="https://241stream.online/feed?q={searchTerms}"/>
+  <Url type="text/html" method="GET" template="https://241stream.online/recherche?q={searchTerms}"/>
+  <Url type="application/rss+xml" method="GET" template="https://241stream.online/feed?q={searchTerms}"/>
   <Image height="16" width="16" type="image/x-icon">https://241stream.online/favicon.ico</Image>
   <Image height="64" width="64" type="image/png">https://241stream.online/assets/images/stream241.jpg</Image>
   <Query role="example" searchTerms="film"/>
   <Developer>241stream Team</Developer>
-  <Attribution>© 2025 241stream. Tous droits réservés.</Attribution>
+  <Attribution>© 2024 241stream. Tous droits réservés.</Attribution>
   <SyndicationRight>open</SyndicationRight>
+  <!-- Set to false because 241stream does not include adult content. Update to true if adult content is ever added. -->
   <AdultContent>false</AdultContent>
   <Language>fr</Language>
   <OutputEncoding>UTF-8</OutputEncoding>
