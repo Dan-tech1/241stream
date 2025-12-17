@@ -2,67 +2,187 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>241stream - Streaming gratuit de films, séries et animes</title>
-  <meta name="description"
-    content="241stream vous permet de regarder gratuitement et en illimité des films, séries et animes en HD, sans inscription ni téléchargement.">
-  <meta name="keywords"
-    content="streaming gratuit, films VF, séries VF, animes streaming, 241stream, 241stream.online, films HD, séries HD">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="gOs_uvjTiulmYrGyUbup_x4WlSuYZ8wr_61shXJaIfw" />
-
-
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="241stream - Streaming gratuit de films, séries et animes">
-  <meta property="og:description"
-    content="Regardez vos films, séries et animes préférés gratuitement en HD sur 241stream. Aucun abonnement requis.">
+  <!-- Encodage et compatibilité -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  
+  <!-- Titre principal optimisé -->
+  <title>Films en streaming gratuit | Séries et Animes HD | 241stream</title>
+  
+  <!-- Description SEO optimisée -->
+  <meta name="description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD sur 241stream. Large catalogue, VF/VOSTFR, sans inscription. Films récents, séries complètes, animes populaires.">
+  
+  <!-- Keywords stratégiques -->
+  <meta name="keywords" content="streaming gratuit, films VF, séries VF, animes streaming, 241stream, films HD, séries HD, regarder film gratuit, streaming français, animes VOSTFR, films en ligne, séries en ligne">
+  
+  <!-- Informations sur l'auteur et droits -->
+  <meta name="author" content="241stream">
+  <meta name="copyright" content="241stream">
+  <meta name="language" content="fr">
+  
+  <!-- Robots et indexation -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  
+  <!-- Vérification Google -->
+  <meta name="google-site-verification" content="gOs_uvjTiulmYrGyUbup_x4WlSuYZ8wr_61shXJaIfw">
+  
+  <!-- Open Graph optimisé -->
+  <meta property="og:title" content="241stream - Films, Séries et Animes en Streaming Gratuit HD">
+  <meta property="og:description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD. Catalogue complet, VF/VOSTFR, sans inscription nécessaire.">
   <meta property="og:image" content="https://241stream.online/assets/images/stream241.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="241stream - Plateforme de streaming gratuit">
   <meta property="og:url" content="https://241stream.online/">
+  <meta property="og:site_name" content="241stream">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
+  <meta property="og:locale" content="fr_FR">
+  
+  <!-- Twitter Card optimisée -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="241stream - Streaming gratuit de films, séries et animes">
-  <meta name="twitter:description" content="Profitez des films, séries et animes en streaming gratuit sur 241stream.">
+  <meta name="twitter:title" content="241stream - Streaming Gratuit de Films, Séries et Animes">
+  <meta name="twitter:description" content="Catalogue complet de films, séries et animes en streaming gratuit HD. Compatible mobile, tablette et TV.">
   <meta name="twitter:image" content="https://241stream.online/assets/images/stream241.jpg">
   <meta name="twitter:site" content="@241stream">
-
-
-  <link rel="icon" type="image/png" href="assets/images/stream241.jpg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="hero.css">
+  <meta name="twitter:creator" content="@241stream">
+  
+  <!-- Favicon moderne avec multiples tailles -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://241stream.online/assets/images/stream241.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://241stream.online/assets/images/stream241.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://241stream.online/assets/images/stream241.jpg">
+  <link rel="manifest" href="https://241stream.online/site.webmanifest">
+  <link rel="mask-icon" href="https://241stream.online/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Préchargement des ressources critiques -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="hero.css" as="style">
+  <link rel="preload" href="app.js" as="script">
+  <link rel="preload" href="data.js" as="script">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" media="all">
+  <link rel="stylesheet" href="hero.css" media="all">
+  
+  <!-- Préconnexion aux domaines externes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://image.tmdb.org">
+  
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+  
+  <!-- Canonical et hreflang optimisés -->
   <link rel="canonical" href="https://241stream.online/">
   <link rel="alternate" hreflang="fr" href="https://241stream.online/">
+  <link rel="alternate" hreflang="fr-FR" href="https://241stream.online/">
   <link rel="alternate" hreflang="en" href="https://241stream.online/en/">
   <link rel="alternate" hreflang="es" href="https://241stream.online/es/">
-
+  <link rel="alternate" hreflang="x-default" href="https://241stream.online/">
+  
+  <!-- Open Search -->
   <link rel="search" type="application/opensearchdescription+xml" title="241stream" href="opensearch.xml">
-  <link rel="alternate" type="application/rss+xml" title="241stream" href="feed.xml">
-
-
-
-  <!-- Schema.org JSON-LD -->
+  
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Derniers films ajoutés - 241stream" href="rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="Dernières séries ajoutées - 241stream" href="rss-series.xml">
+  
+  <!-- Structured Data amélioré -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "241stream",
-    "url": "https://241stream.online",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://241stream.online/recherche?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://241stream.online/#website",
+        "url": "https://241stream.online",
+        "name": "241stream",
+        "description": "Plateforme de streaming gratuit de films, séries et animes en haute qualité",
+        "publisher": {
+          "@type": "Organization",
+          "name": "241stream",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://241stream.online/assets/images/stream241.jpg"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://241stream.online/recherche?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://241stream.online/#webpage",
+        "url": "https://241stream.online",
+        "name": "Films en streaming gratuit | 241stream",
+        "description": "Regardez des films, séries et animes en streaming gratuit HD",
+        "isPartOf": {
+          "@id": "https://241stream.online/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://241stream.online/#breadcrumb"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://241stream.online/assets/images/stream241.jpg"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2025-01-18",
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://241stream.online/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://241stream.online",
+              "name": "Accueil"
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
-
+  
+  <!-- Politique de sécurité du contenu -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <!-- Cache Control -->
+  <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+  
+  <!-- Format detection -->
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  
+  <!-- Script de suivi optimisé -->
+  <script>
+    // Performance tracking
+    window.addEventListener('load', function() {
+      setTimeout(function(){
+        if (window.performance) {
+          var perfEntries = performance.getEntriesByType('navigation');
+          if (perfEntries.length > 0) {
+            var pageLoadTime = perfEntries[0].loadEventEnd - perfEntries[0].startTime;
+            if (pageLoadTime > 0) {
+              console.log('Page load time: ' + Math.round(pageLoadTime) + 'ms');
+            }
+          }
+        }
+      }, 0);
+    });
+  </script>
 </head>
 
 <body data-page="home">
