@@ -475,6 +475,14 @@ const DATA = {
       flags: {},
       categorie: "action",
     },
+    {
+      title: "Toy Story 4 - 2019",
+      embed: "https://uqload.bz/vlzgw5b2puwl.html",
+      thumb: "https://image.tmdb.org/t/p/w400/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+      desc: "Woody a toujours privilégié la joie et le bien‐être de ses jeunes propriétaires – Andy puis Bonnie – et de ses compagnons, n’hésitant pas à prendre tous les risques pour eux, aussi inconsidérés soient‐ils. L’arrivée de Forky, un nouveau jouet qui ne veut pas en être un dans la chambre de Bonnie, met toute la petite bande en émoi. C’est le début d’une grande aventure et d’un extraordinaire voyage pour Woody et ses amis. Le cowboy va découvrir à quel point le monde peut être vaste pour un jouet",
+      flags: { top: true },
+      categorie: "action",
+    }
     // Ajoute la propriété "categorie" pour tous les autres films restants
   ],
 

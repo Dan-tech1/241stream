@@ -218,24 +218,6 @@
       <button class="hero-nav prev" aria-label="Précédent">‹</button>
       <button class="hero-nav next" aria-label="Suivant">›</button>
     </section>
-    <!-- Popup Adblock -->
-    <div id="adblock-popup" class="popup-overlay">
-      <div class="popup-box">
-        <h2>✨ Améliorez votre expérience</h2>
-        <p>
-          Les publicités présentes sur ce site nous aident à couvrir les frais et à maintenir 241stream en ligne
-          gratuitement pour tous 🎬.
-          <strong class="strong">Cependant, si elles vous gênent, vous pouvez tout à fait utiliser un bloqueur de pub
-            pour profiter d’un visionnage plus confortable. </strong>
-        </p>
-        <ul>
-          <li>➡️ Installez une extension comme <b>AdBlock</b> ou <b>AdGuard</b></li>
-          <li>➡️ Activez-la sur notre site</li>
-        </ul>
-        <p class="merci">🙏 Merci de votre compréhension et bonne navigation !</p>
-        <button id="close-popup">J'ai compris</button>
-      </div>
-    </div>
     <section class="section">
       <div class="section-head">
         <h2>Top 10 aujourd'hui</h2>
@@ -248,36 +230,12 @@
       </div>
       <div id="row-news" class="row"></div>
     </section>
-    <hr class="hr">
-    <!-- Bannière publicitaire mince et responsive -->
-    <div class="ad-banner">
-      <script type="text/javascript">
-        atOptions = {
-          'key': 'db2d8be64673f7300cbce3647c3f5259',
-          'format': 'iframe',
-          'height': 90,   // hauteur réduite pour une bannière mince
-          'width': 728,   // largeur par défaut pour desktop
-          'params': {}
-        };
-      </script>
-      <script type="text/javascript"
-        src="//rattlekindergartencultivate.com/db2d8be64673f7300cbce3647c3f5259/invoke.js"></script>
-    </div>
-    <hr class="hr">
     <section class="section">
       <div class="section-head">
         <h2>Recommandations</h2>
       </div>
       <div id="row-recos" class="row"></div>
     </section>
-    <hr>
-    <!-- Conteneur pour la bannière native -->
-    <div class="native-banner">
-      <script async="async" data-cfasync="false"
-        src="//rattlekindergartencultivate.com/7e9663bf7685d3f96b10c61fe83a9456/ivoke.js"></script>
-      <div id="container-7e9663bf7685d3f96b10c61fe83a9456"></div>
-    </div>
-    <hr>
   </main>
 
   <footer>
@@ -304,12 +262,6 @@
           name="logo-youtube"></ion-icon></a>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("close-popup").addEventListener("click", () => {
-      document.getElementById("adblock-popup").style.display = "none";
-    });
-  </script>
 
   <script defer src="data.js"></script>
   <script defer src="app.js"></script>
