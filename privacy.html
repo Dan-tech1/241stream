@@ -1,88 +1,157 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité - 241stream</title>
-  <meta name="description"
-    content="Découvrez la politique de confidentialité de 241stream. Nous respectons votre vie privée et expliquons ici l’usage de vos données personnelles.">
-  <meta name="robots" content="noindex, nofollow">
-
-
-  <style>
-    h1 {
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 20;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.742);
-    }
-
-    section {
-      border-radius: 30px;
-      box-shadow: 0 2px black;
-      margin: 20px;
-      padding: 20px;
-      background: wheat;
-    }
-
-    @media (max-width:600px) {
-      h1 {
-        border-radius: 20px;
-        font-size: 1rem;
-        margin-top: 40px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.742);
-      }
-
-      section p {
-        margin: 20px;
-        font-size: 0.9rem;
-      }
-
-      section h2 {
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width:760px) {
-      h1 {
-        font-size: 0.6;
-      }
-    }
-  </style>
-
+  <title>Politique de confidentialité | 241stream</title>
+  <meta name="description" content="Politique de confidentialité de 241stream : comment nous protégeons vos données personnelles.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Confidentialité — 241stream">
+  <meta property="og:description" content="Politique de confidentialité de la plateforme 241stream.">
+  <meta property="og:url" content="https://241stream.online/privacy.html">
+  <meta property="og:image" content="https://241stream.online/src/assets/images/stream241.jpg">
+  <link rel="icon" type="image/png" href="src/assets/images/stream241.jpg">
+  <link rel="canonical" href="https://241stream.online/privacy.html">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
 </head>
+<body data-page="privacy" class="bg-[#0a0a0c] text-[#f5f5f5] font-['Inter',system-ui,sans-serif] antialiased overflow-x-hidden">
 
-<body>
-  <header>
-    <h1>Politique de confidentialité</h1>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#131317]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 no-underline group shrink-0">
+        <img src="src/assets/images/stream241.jpg" alt="241stream" width="38" height="38" class="rounded-full shadow-lg ring-2 ring-[#facc15]/20 group-hover:ring-[#facc15]/50 transition-all duration-300">
+        <span class="text-[#facc15] font-extrabold text-lg tracking-wider hidden sm:block group-hover:text-[#ffe84d] transition-colors">241stream</span>
+      </a>
+      <nav class="flex items-center gap-2">
+        <button id="menu-toggle" class="lg:hidden bg-transparent border-0 text-[#f5f5f5] text-2xl cursor-pointer p-2 hover:text-[#facc15] transition-colors" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
+        <ul id="nav-menu" class="hidden lg:flex items-center gap-1 list-none m-0 p-0">
+          <li><a href="index.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+          <li><a href="films.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+          <li><a href="series.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+          <li><a href="animes.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+          <li><a href="faq.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#131317]/95 backdrop-blur-xl border-t border-white/5 px-4 pb-4">
+      <ul class="flex flex-col gap-1 pt-2 list-none m-0 p-0">
+        <li><a href="index.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+        <li><a href="films.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+        <li><a href="series.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+        <li><a href="animes.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+        <li><a href="faq.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Collecte d’informations</h2>
-      <p>
-        Nous ne collectons pas de données personnelles sensibles. Toutefois, des outils tiers (publicité, statistiques)
-        peuvent utiliser des cookies pour améliorer votre expérience.
-      </p>
-    </section>
+  <main class="min-h-screen pt-[80px]">
+    <div class="max-w-[800px] mx-auto px-4 sm:px-6 py-10">
+      <!-- Page Title -->
+      <div class="text-center mb-10 animate-[fadeUp_.5s_ease-out]">
+        <div class="w-14 h-14 rounded-2xl bg-[#facc15]/10 flex items-center justify-center mx-auto mb-4">
+          <ion-icon name="eye-off-outline" class="text-[#facc15] text-3xl"></ion-icon>
+        </div>
+        <h1 class="font-['Manrope',sans-serif] text-2xl sm:text-3xl font-extrabold text-[#f5f5f5] mb-2">Politique de confidentialité</h1>
+        <p class="text-[#a1a1aa] text-sm">Dernière mise à jour : janvier 2025</p>
+      </div>
 
-    <section>
-      <h2>Cookies et publicité</h2>
-      <p>
-        241stream utilise des cookies pour analyser le trafic et afficher des publicités adaptées.
-        Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.
-      </p>
-    </section>
+      <!-- Sections -->
+      <div class="space-y-6">
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">1. Introduction</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">La présente politique de confidentialité décrit comment 241stream (« nous », « notre ») collecte, utilise et protège les informations personnelles que vous fournissez lors de l'utilisation de notre site web <strong class="text-[#f5f5f5]">241stream.online</strong>. Votre confidentialité est primordiale pour nous.</p>
+        </section>
 
-    <section>
-      <h2>Protection de vos données</h2>
-      <p>
-        Vos informations ne sont ni revendues ni partagées avec des tiers à des fins illégales.
-        Nous travaillons uniquement avec des partenaires de confiance (Google, annonceurs certifiés).
-      </p>
-    </section>
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">2. Données collectées</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Nous collectons uniquement les données suivantes :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="chevron-forward-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span><strong class="text-[#f5f5f5]">Données de navigation :</strong> adresse IP, type de navigateur, pages visitées, durée des sessions (via des outils d'analyse).</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="chevron-forward-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span><strong class="text-[#f5f5f5]">Cookies :</strong> cookies techniques nécessaires au fonctionnement du site et cookies d'analyse (Google Analytics).</span></li>
+          </ul>
+          <p class="text-[#a1a1aa] leading-relaxed mt-3">Nous ne collectons <strong class="text-[#f5f5f5]">aucune donnée personnelle identifiable</strong> (nom, e-mail, etc.) sauf si vous nous contactez directement par e-mail.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">3. Utilisation des données</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Les données collectées servent exclusivement à :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Assurer le bon fonctionnement du site.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Analyser les tendances de consultation pour améliorer notre contenu.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Prévenir les abus et garantir la sécurité.</span></li>
+          </ul>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">4. Cookies</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">Notre site utilise des cookies pour améliorer votre expérience. Vous pouvez configurer votre navigateur pour refuser les cookies, mais certaines fonctionnalités pourraient ne plus être disponibles. Les cookies tiers proviennent des lecteurs vidéo intégrés (Vidzy, Uqload, etc.) et de Google Analytics.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">5. Partage des données</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">Nous ne vendons, n'échangeons ni ne transférons vos données personnelles à des tiers, sauf obligations légales. Les services tiers intégrés (lecteurs vidéo, analytics) ont leurs propres politiques de confidentialité.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">6. Sécurité</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger vos données. Cependant, aucune transmission de données sur Internet ne peut être garantie 100% sécurisée.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">7. Vos droits</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Conformément aux lois applicables, vous avez le droit de :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Accéder à vos données personnelles.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Demander la rectification ou la suppression de vos données.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Vous opposer au traitement de vos données.</span></li>
+          </ul>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">8. Contact</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Pour toute question relative à cette politique :</p>
+          <a href="mailto:dmca241stream@gmail.com" class="inline-flex items-center gap-2 text-[#facc15] font-semibold hover:text-[#ffe84d] transition-colors">
+            <ion-icon name="mail-outline"></ion-icon> dmca241stream@gmail.com
+          </a>
+        </section>
+      </div>
+    </div>
   </main>
-</body>
 
+  <!-- FOOTER -->
+  <footer class="bg-[#131317]/80 backdrop-blur-xl border-t border-white/5 mt-10">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
+        <a href="index.html" class="flex items-center gap-3 no-underline group">
+          <img src="src/assets/images/stream241.jpg" alt="241stream" width="36" height="36" class="rounded-full ring-2 ring-[#facc15]/20" loading="lazy">
+          <span class="text-[#facc15] font-extrabold text-base tracking-wider group-hover:text-[#ffe84d] transition-colors">241stream</span>
+        </a>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/share/15vA9yGFgb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-[#facc15] hover:border-[#facc15]/30 hover:bg-[#facc15]/10 transition-all" aria-label="Facebook"><ion-icon name="logo-facebook" class="text-lg"></ion-icon></a>
+          <a href="https://youtube.com/@241stream?si=IdZ8Ushhw-UnrBDV" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-red-500 hover:border-red-500/30 hover:bg-red-500/10 transition-all" aria-label="YouTube"><ion-icon name="logo-youtube" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-blue-400 hover:border-blue-400/30 hover:bg-blue-400/10 transition-all" aria-label="Twitter"><ion-icon name="logo-twitter" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-pink-500 hover:border-pink-500/30 hover:bg-pink-500/10 transition-all" aria-label="Instagram"><ion-icon name="logo-instagram" class="text-lg"></ion-icon></a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-6">
+        <a href="faq.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">FAQ</a>
+        <a href="about.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">À propos</a>
+        <a href="dmca.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">DMCA</a>
+        <a href="terms.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Conditions</a>
+        <a href="privacy.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Confidentialité</a>
+      </div>
+      <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-6"></div>
+      <p class="text-center text-xs text-[#71717a] max-w-xl mx-auto leading-relaxed">&copy; 2026 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces.</p>
+    </div>
+  </footer>
+
+  <script defer src="src/js/app.js"></script>
+</body>
 </html>

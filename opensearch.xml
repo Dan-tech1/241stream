@@ -1,90 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  
   <ShortName>241stream</ShortName>
-  <LongName>Recherche 241stream - Films, Séries TV et Animes en Streaming Gratuit</LongName>
-  <Description>Recherchez et découvrez des milliers de films, séries TV et animes en streaming gratuit HD sur 241stream. Sans inscription, VF/VOSTFR.</Description>
-  
-  <Tags>films series séries animes streaming gratuit VF VOSTFR HD film streaming séries TV</Tags>
-  <Contact>contact@241stream.online</Contact>
-  
-  <!-- URL de recherche principales -->
-  <Url type="text/html" method="GET" 
-       template="https://241stream.online/recherche?q={searchTerms}&amp;ref=opensearch"/>
-  
-  <!-- URL de flux RSS pour les résultats de recherche -->
-  <Url type="application/rss+xml" method="GET" 
-       template="https://241stream.online/feed/search?q={searchTerms}&amp;format=rss"/>
-  
-  <!-- URL pour les suggestions (si supporté) -->
-  <Url type="application/x-suggestions+json" method="GET"
-       template="https://241stream.online/api/suggest?q={searchTerms}"/>
-  
-  <!-- URL pour les résultats en JSON (si supporté) -->
-  <Url type="application/json" method="GET"
-       template="https://241stream.online/api/search?q={searchTerms}&amp;format=json"/>
-  
-  <!-- URL du formulaire de recherche -->
-  <SearchForm>https://241stream.online/recherche</SearchForm>
-  
-  <!-- Icônes en différentes tailles -->
-  <Image height="16" width="16" type="image/x-icon">https://241stream.online/favicon.ico</Image>
-  <Image height="32" width="32" type="image/png">https://241stream.online/assets/images/favicon-32x32.png</Image>
-  <Image height="64" width="64" type="image/png">https://241stream.online/assets/images/stream241.jpg</Image>
-  <Image height="128" width="128" type="image/png">https://241stream.online/assets/images/stream241.jpg</Image>
-  
-  <!-- Exemples de requêtes pour la découverte -->
-  <Query role="example" searchTerms="film action 2024" title="Recherche films d'action 2024"/>
-  <Query role="example" searchTerms="série fantastique" title="Recherche séries fantastiques"/>
-  <Query role="example" searchTerms="anime VOSTFR" title="Recherche animes en VOSTFR"/>
-  <Query role="example" searchTerms="comedie française" title="Recherche comédies françaises"/>
-  
-  <!-- Informations du développeur -->
+  <LongName>241stream - Films, Séries et Animes en Streaming Gratuit</LongName>
+  <Description>Recherchez des films, séries et animes en streaming gratuit HD sur 241stream.</Description>
+  <Tags>films series animes streaming gratuit VF VOSTFR HD</Tags>
+  <Contact>dmca241stream@gmail.com</Contact>
+  <Url type="text/html" method="GET" template="https://241stream.online/films.html"/>
+  <SearchForm>https://241stream.online/</SearchForm>
+  <Image height="64" width="64" type="image/jpeg">https://241stream.online/src/assets/images/stream241.jpg</Image>
   <Developer>241stream Team</Developer>
-  <Attribution>© 2023-2025 241stream. Tous droits réservés. Contenu fourni par des services tiers.</Attribution>
-  
-  <!-- Droits de syndication -->
+  <Attribution>&copy; 2026 241stream. Contenu fourni par des services tiers.</Attribution>
   <SyndicationRight>open</SyndicationRight>
-  
-  <!-- Contenu adulte - false car pas de contenu pour adultes -->
   <AdultContent>false</AdultContent>
-  
-  <!-- Paramètres de langue et encodage -->
   <Language>fr-FR</Language>
-  <Language>fr</Language>
   <OutputEncoding>UTF-8</OutputEncoding>
   <InputEncoding>UTF-8</InputEncoding>
-  
-  <!-- Paramètres pour Firefox -->
-  <moz:SearchForm>https://241stream.online/recherche</moz:SearchForm>
-  
-  <!-- Attribution et politiques -->
-  <Contact>support@241stream.online</Contact>
-  
-  <!-- Mises à jour périodiques -->
-  <UpdatePeriod>P1W</UpdatePeriod>
-  <UpdateFrequency>1</UpdateFrequency>
-  <UpdateBase>2024-01-01</UpdateBase>
-  
-  <!-- Thèmes et catégories -->
-  <Tags>video film movie series tv anime streaming entertainment</Tags>
-  
-  <!-- Type de contenu -->
-  <ContentType>multimedia</ContentType>
-  
-  <!-- Restrictions d'utilisation -->
-  <UsageRights>free</UsageRights>
-  
-  <!-- Statistiques et analytics -->
-  <Query role="statistics" 
-         searchTerms=""
-         totalResults="0"
-         searchTime="0"/>
-  
-  <!-- Extension pour la prise en charge mobile -->
-  <Url type="text/html" method="GET" 
-       template="https://241stream.online/recherche?q={searchTerms}&amp;mobile=1"
-       rel="mobile"/>
-       
+  <moz:SearchForm>https://241stream.online/</moz:SearchForm>
 </OpenSearchDescription>

@@ -1,0 +1,22 @@
+{
+  "name": "241stream",
+  "version": "2.0.0",
+  "description": "241stream — Plateforme de streaming premium de films, séries et animes",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/style.css --minify",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "streaming",
+    "films",
+    "series",
+    "animes",
+    "241stream"
+  ],
+  "author": "241stream",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

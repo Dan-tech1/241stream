@@ -1,374 +1,244 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" class="dark">
 <head>
-  <!-- Encodage et compatibilité -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  
-  <!-- Titre principal optimisé -->
   <title>Films en streaming gratuit | Séries et Animes HD | 241stream</title>
-  
-  <!-- Description SEO optimisée -->
-  <meta name="description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD sur 241stream. Large catalogue, VF/VOSTFR, sans inscription. Films récents, séries complètes, animes populaires.">
-  
-  <!-- Keywords stratégiques -->
-  <meta name="keywords" content="streaming gratuit, films VF, séries VF, animes streaming, 241stream, films HD, séries HD, regarder film gratuit, streaming français, animes VOSTFR, films en ligne, séries en ligne">
-  
-  <!-- Informations sur l'auteur et droits -->
+  <meta name="description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD sur 241stream. Large catalogue, VF/VOSTFR, sans inscription.">
+  <meta name="keywords" content="streaming gratuit, films VF, séries VF, animes streaming, 241stream, films HD">
   <meta name="author" content="241stream">
-  <meta name="copyright" content="241stream">
-  <meta name="language" content="fr">
-  
-  <!-- Robots et indexation -->
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="bingbot" content="index, follow">
-  
-  <!-- Vérification Google -->
   <meta name="google-site-verification" content="gOs_uvjTiulmYrGyUbup_x4WlSuYZ8wr_61shXJaIfw">
-  
-  <!-- Open Graph optimisé -->
-  <meta property="og:title" content="241stream - Films, Séries et Animes en Streaming Gratuit HD">
-  <meta property="og:description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD. Catalogue complet, VF/VOSTFR, sans inscription nécessaire.">
-  <meta property="og:image" content="https://241stream.online/assets/images/stream241.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="241stream - Plateforme de streaming gratuit">
+  <meta property="og:title" content="241stream — Films, Séries et Animes en Streaming Gratuit HD">
+  <meta property="og:description" content="Regardez vos films, séries et animes préférés en streaming gratuit HD.">
+  <meta property="og:image" content="https://241stream.online/src/assets/images/stream241.jpg">
   <meta property="og:url" content="https://241stream.online/">
   <meta property="og:site_name" content="241stream">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  
-  <!-- Twitter Card optimisée -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="241stream - Streaming Gratuit de Films, Séries et Animes">
-  <meta name="twitter:description" content="Catalogue complet de films, séries et animes en streaming gratuit HD. Compatible mobile, tablette et TV.">
-  <meta name="twitter:image" content="https://241stream.online/assets/images/stream241.jpg">
+  <meta name="twitter:title" content="241stream — Streaming Gratuit de Films, Séries et Animes">
+  <meta name="twitter:description" content="Catalogue complet de films, séries et animes en streaming gratuit HD.">
+  <meta name="twitter:image" content="https://241stream.online/src/assets/images/stream241.jpg">
   <meta name="twitter:site" content="@241stream">
-  <meta name="twitter:creator" content="@241stream">
-  
-  <!-- Favicon moderne avec multiples tailles -->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://241stream.online/assets/images/stream241.jpg">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://241stream.online/assets/images/stream241.jpg">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://241stream.online/assets/images/stream241.jpg">
-  <link rel="manifest" href="https://241stream.online/site.webmanifest">
-  <link rel="mask-icon" href="https://241stream.online/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  
-  <!-- Préchargement des ressources critiques -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="hero.css" as="style">
-  <link rel="preload" href="app.js" as="script">
-  <link rel="preload" href="data.js" as="script">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" media="all">
-  <link rel="stylesheet" href="hero.css" media="all">
-  
-  <!-- Préconnexion aux domaines externes -->
+  <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/stream241.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/stream241.jpg">
+  <meta name="theme-color" content="#0a0a0c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://image.tmdb.org">
-  
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
-  
-  <!-- Canonical et hreflang optimisés -->
   <link rel="canonical" href="https://241stream.online/">
   <link rel="alternate" hreflang="fr" href="https://241stream.online/">
-  <link rel="alternate" hreflang="fr-FR" href="https://241stream.online/">
-  <link rel="alternate" hreflang="en" href="https://241stream.online/en/">
-  <link rel="alternate" hreflang="es" href="https://241stream.online/es/">
   <link rel="alternate" hreflang="x-default" href="https://241stream.online/">
-  
-  <!-- Open Search -->
   <link rel="search" type="application/opensearchdescription+xml" title="241stream" href="opensearch.xml">
-  
-  <!-- RSS Feed -->
-  <link rel="alternate" type="application/rss+xml" title="Derniers films ajoutés - 241stream" href="rss.xml">
-  <link rel="alternate" type="application/rss+xml" title="Dernières séries ajoutées - 241stream" href="rss-series.xml">
-  
-  <!-- Structured Data amélioré -->
+  <link rel="alternate" type="application/rss+xml" title="Derniers contenus - 241stream" href="feed.xml">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://241stream.online/#website",
-        "url": "https://241stream.online",
-        "name": "241stream",
-        "description": "Plateforme de streaming gratuit de films, séries et animes en haute qualité",
-        "publisher": {
-          "@type": "Organization",
-          "name": "241stream",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://241stream.online/assets/images/stream241.jpg"
-          }
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://241stream.online/recherche?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        },
-        "inLanguage": "fr-FR"
-      },
-      {
-        "@type": "CollectionPage",
-        "@id": "https://241stream.online/#webpage",
-        "url": "https://241stream.online",
-        "name": "Films en streaming gratuit | 241stream",
-        "description": "Regardez des films, séries et animes en streaming gratuit HD",
-        "isPartOf": {
-          "@id": "https://241stream.online/#website"
-        },
-        "breadcrumb": {
-          "@id": "https://241stream.online/#breadcrumb"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://241stream.online/assets/images/stream241.jpg"
-        },
-        "datePublished": "2024-01-01",
-        "dateModified": "2025-01-18",
-        "inLanguage": "fr-FR"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://241stream.online/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@id": "https://241stream.online",
-              "name": "Accueil"
-            }
-          }
-        ]
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","url":"https://241stream.online","name":"241stream","description":"Plateforme de streaming gratuit de films, séries et animes en haute qualité","publisher":{"@type":"Organization","name":"241stream","logo":{"@type":"ImageObject","url":"https://241stream.online/src/assets/images/stream241.jpg"}},"inLanguage":"fr-FR"},{"@type":"CollectionPage","url":"https://241stream.online","name":"Films en streaming gratuit | 241stream","dateModified":"2026-02-25","inLanguage":"fr-FR"}]}
   </script>
-  
-  <!-- Politique de sécurité du contenu -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
-  <!-- Cache Control -->
-  <meta http-equiv="Cache-Control" content="max-age=31536000, public">
-  
-  <!-- Format detection -->
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-  
-  <!-- Script de suivi optimisé -->
-  <script>
-    // Performance tracking
-    window.addEventListener('load', function() {
-      setTimeout(function(){
-        if (window.performance) {
-          var perfEntries = performance.getEntriesByType('navigation');
-          if (perfEntries.length > 0) {
-            var pageLoadTime = perfEntries[0].loadEventEnd - perfEntries[0].startTime;
-            if (pageLoadTime > 0) {
-              console.log('Page load time: ' + Math.round(pageLoadTime) + 'ms');
-            }
-          }
-        }
-      }, 0);
-    });
-  </script>
 </head>
 
-<body data-page="home">
+<body data-page="home" class="bg-[#0a0a0c] text-[#f5f5f5] font-['Inter',system-ui,sans-serif] antialiased overflow-x-hidden">
 
-  <header>
-    <div class="header-content">
-      <a class="logo" href="index.html"><img src="assets/images/stream241.jpg" alt="logo 241stream"><strong
-          class="brand">241stream</strong></a>
-      <nav class="nav-links">
-        <button class="menu-toggle" aria-label="Menu">Menu☰</button>
-        <ul>
-          <li><a class="active" href="index.html"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
-          <li><a href="films.html"><ion-icon name="film-outline"></ion-icon> Films</a></li>
-          <li><a href="series.html"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
-          <li><a href="animes.html"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
-          <li><a href="faq.html"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+  <!-- ═══════ HEADER ═══════ -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#131317]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 no-underline group shrink-0" aria-label="Accueil">
+        <img src="src/assets/images/stream241.jpg" alt="241stream" width="38" height="38"
+             class="rounded-full shadow-lg ring-2 ring-[#facc15]/20 group-hover:ring-[#facc15]/50 transition-all duration-300" loading="eager">
+        <span class="text-[#facc15] font-extrabold text-lg tracking-wider hidden sm:block group-hover:text-[#ffe84d] transition-colors">241stream</span>
+      </a>
+      <nav class="flex items-center gap-2">
+        <button id="menu-toggle" class="lg:hidden bg-transparent border-0 text-[#f5f5f5] text-2xl cursor-pointer p-2 hover:text-[#facc15] transition-colors" aria-label="Menu">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <ul id="nav-menu" class="hidden lg:flex items-center gap-1 list-none m-0 p-0">
+          <li><a href="index.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#facc15] bg-[#facc15]/10 no-underline"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+          <li><a href="films.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+          <li><a href="series.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+          <li><a href="animes.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+          <li><a href="faq.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
         </ul>
       </nav>
-      <form class="search-form" role="search">
-        <input name="q" type="text" placeholder="Rechercher...">
-        <button aria-label="Rechercher"><ion-icon name="search-outline"></ion-icon></button>
+      <form class="search-form flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 backdrop-blur-sm focus-within:border-[#facc15]/40 focus-within:bg-white/10 transition-all" role="search">
+        <input name="q" type="text" placeholder="Rechercher..."
+               class="bg-transparent border-0 text-[#f5f5f5] outline-none w-28 sm:w-44 text-sm placeholder:text-[#71717a]">
+        <button type="submit" aria-label="Rechercher" class="bg-transparent border-0 text-[#facc15] cursor-pointer text-lg hover:text-[#ffe84d] hover:scale-110 transition-all">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
       </form>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#131317]/95 backdrop-blur-xl border-t border-white/5 px-4 pb-4">
+      <ul class="flex flex-col gap-1 pt-2 list-none m-0 p-0">
+        <li><a href="index.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#facc15] bg-[#facc15]/10 no-underline"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+        <li><a href="films.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+        <li><a href="series.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+        <li><a href="animes.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+        <li><a href="faq.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+      </ul>
     </div>
   </header>
 
-  <main>
-    <!-- À placer dans <main> où tu veux la section accueil -->
-    <section class="hero-carousel">
-      <h1 class="hero-title">241stream — Films populaires</h1>
-      <div class="hero-row" id="hero-row">
-        <!-- Les miniatures seront injectées par JS -->
+  <main class="min-h-screen pt-[72px]">
+
+    <!-- ═══════ HERO SECTION ═══════ -->
+    <section class="relative max-w-[1400px] mx-auto px-4 sm:px-6 pt-6 pb-10">
+      <div class="text-center mb-8 animate-[fadeUp_.6s_ease-out]">
+        <h1 class="font-['Manrope',sans-serif] text-2xl sm:text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[#facc15] via-[#ffe84d] to-[#facc15] bg-clip-text text-transparent mb-3">
+          241stream
+        </h1>
+        <p class="text-[#a1a1aa] text-sm sm:text-base max-w-xl mx-auto">
+          Films, séries et animes en streaming gratuit — HD, VF/VOSTFR
+        </p>
       </div>
-      <button class="hero-nav prev" aria-label="Précédent">‹</button>
-      <button class="hero-nav next" aria-label="Suivant">›</button>
+      <div class="relative group">
+        <div id="hero-row" class="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide scroll-smooth">
+          <div class="skeleton flex-shrink-0 w-[280px] sm:w-[350px] h-[380px] sm:h-[440px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[280px] sm:w-[350px] h-[380px] sm:h-[440px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[280px] sm:w-[350px] h-[380px] sm:h-[440px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[280px] sm:w-[350px] h-[380px] sm:h-[440px] rounded-2xl"></div>
+        </div>
+        <button id="hero-prev" aria-label="Précédent"
+          class="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm text-white border border-white/10 flex items-center justify-center hover:bg-[#facc15] hover:text-[#0a0a0c] hover:border-[#facc15] transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-lg">
+          <ion-icon name="chevron-back-outline" class="text-xl"></ion-icon>
+        </button>
+        <button id="hero-next" aria-label="Suivant"
+          class="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-black/60 backdrop-blur-sm text-white border border-white/10 flex items-center justify-center hover:bg-[#facc15] hover:text-[#0a0a0c] hover:border-[#facc15] transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-lg">
+          <ion-icon name="chevron-forward-outline" class="text-xl"></ion-icon>
+        </button>
+      </div>
     </section>
-    <section class="section">
-      <div class="section-head">
-        <h2>Top 10 aujourd'hui</h2>
+
+    <!-- ═══════ TOP 10 ═══════ -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 mb-14">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-base font-extrabold text-[#facc15] tracking-wide border-l-4 border-[#facc15] pl-3 flex items-center gap-2">
+          <ion-icon name="trophy-outline" class="text-lg"></ion-icon> Top 10 aujourd'hui
+        </h2>
+        <a href="films.html" class="text-xs font-semibold text-[#71717a] hover:text-[#facc15] transition-colors no-underline flex items-center gap-1">
+          Voir tout <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
       </div>
-      <div id="row-top10" class="row"></div>
+      <div id="row-top10" class="relative group">
+        <div class="flex gap-4 overflow-hidden">
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+        </div>
+      </div>
     </section>
-    <section class="section">
-      <div class="section-head">
-        <h2>Nouveautés</h2>
+
+    <!-- ═══════ NOUVEAUTÉS ═══════ -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 mb-14">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-base font-extrabold text-[#facc15] tracking-wide border-l-4 border-[#facc15] pl-3 flex items-center gap-2">
+          <ion-icon name="sparkles-outline" class="text-lg"></ion-icon> Nouveautés
+        </h2>
       </div>
-      <div id="row-news" class="row"></div>
+      <div id="row-news" class="relative group">
+        <div class="flex gap-4 overflow-hidden">
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+        </div>
+      </div>
     </section>
-    <section class="section">
-      <div class="section-head">
-        <h2>Recommandations</h2>
+
+    <!-- ═══════ RECOMMANDATIONS ═══════ -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 mb-14">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-base font-extrabold text-[#facc15] tracking-wide border-l-4 border-[#facc15] pl-3 flex items-center gap-2">
+          <ion-icon name="heart-outline" class="text-lg"></ion-icon> Recommandations
+        </h2>
       </div>
-      <div id="row-recos" class="row"></div>
+      <div id="row-recos" class="relative group">
+        <div class="flex gap-4 overflow-hidden">
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+          <div class="skeleton flex-shrink-0 w-[170px] h-[270px] rounded-2xl"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ CTA Premium ═══════ -->
+    <section class="max-w-[1400px] mx-auto px-4 sm:px-6 mb-14">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1a1a20] via-[#1d1d24] to-[#1a1a20] border border-white/5 p-8 sm:p-12">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#facc15]/5 via-[#6366f1]/5 to-[#06b6d4]/5 pointer-events-none"></div>
+        <div class="relative z-10 text-center max-w-2xl mx-auto">
+          <h2 class="font-['Manrope',sans-serif] text-xl sm:text-2xl font-extrabold text-[#f5f5f5] mb-3">
+            Profitez de tout le catalogue <span class="text-[#facc15]">241stream</span>
+          </h2>
+          <p class="text-[#a1a1aa] text-sm mb-6">Des milliers de films, séries et animes en streaming HD gratuit. Sans inscription, sans limite.</p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="films.html" class="inline-flex items-center gap-2 px-6 py-3 bg-[#facc15] text-[#0a0a0c] font-bold rounded-full shadow-[0_0_20px_rgba(250,204,21,.15)] hover:shadow-[0_0_40px_rgba(250,204,21,.25)] hover:bg-[#ffe84d] transform hover:scale-105 active:scale-95 transition-all duration-300 no-underline">
+              <ion-icon name="play-outline"></ion-icon> Explorer les Films
+            </a>
+            <a href="series.html" class="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-[#f5f5f5] font-semibold rounded-full border border-white/20 backdrop-blur-sm hover:bg-white/20 hover:border-[#facc15]/40 transform hover:scale-105 transition-all duration-300 no-underline">
+              <ion-icon name="tv-outline"></ion-icon> Voir les Séries
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <a href="index.html" class="logo"><img src="assets/images/stream241.jpg" alt=""><strong
-        class="brand">241stream</strong></a>
-    <div class="footer-content">
-      <p>&copy; 2025 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces. 241stream n’héberge
-        aucun contenu.</p>
-      <hr class="hr">
-      <ul>
-        <li><a href="faq.html">FAQ |</a></li>
-        <li><a href="about.html">ABOUT |</a></li>
-        <li><a href="dmca.html" target="_blank">DMCA |</a></li>
-        <li><a href="privacy.html">TERMS |</a></li>
-        <li><a href="terms.html">PRIVACY</a></li>
-      </ul>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/15vA9yGFgb/?mibextid=wwXIfr" target="_blank"><ion-icon
-          name="logo-facebook"></ion-icon></a>
-      <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-      <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://youtube.com/@241stream?si=IdZ8Ushhw-UnrBDV" target="_blank"><ion-icon
-          name="logo-youtube"></ion-icon></a>
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="bg-[#131317]/80 backdrop-blur-xl border-t border-white/5 mt-10">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
+        <a href="index.html" class="flex items-center gap-3 no-underline group">
+          <img src="src/assets/images/stream241.jpg" alt="241stream" width="36" height="36" class="rounded-full ring-2 ring-[#facc15]/20" loading="lazy">
+          <span class="text-[#facc15] font-extrabold text-base tracking-wider group-hover:text-[#ffe84d] transition-colors">241stream</span>
+        </a>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/share/15vA9yGFgb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-[#facc15] hover:border-[#facc15]/30 hover:bg-[#facc15]/10 transition-all" aria-label="Facebook"><ion-icon name="logo-facebook" class="text-lg"></ion-icon></a>
+          <a href="https://youtube.com/@241stream?si=IdZ8Ushhw-UnrBDV" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-red-500 hover:border-red-500/30 hover:bg-red-500/10 transition-all" aria-label="YouTube"><ion-icon name="logo-youtube" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-blue-400 hover:border-blue-400/30 hover:bg-blue-400/10 transition-all" aria-label="Twitter"><ion-icon name="logo-twitter" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-pink-500 hover:border-pink-500/30 hover:bg-pink-500/10 transition-all" aria-label="Instagram"><ion-icon name="logo-instagram" class="text-lg"></ion-icon></a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-6">
+        <a href="faq.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">FAQ</a>
+        <a href="about.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">À propos</a>
+        <a href="dmca.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">DMCA</a>
+        <a href="terms.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Conditions</a>
+        <a href="privacy.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Confidentialité</a>
+      </div>
+      <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-6"></div>
+      <p class="text-center text-xs text-[#71717a] max-w-xl mx-auto leading-relaxed">
+        &copy; 2026 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces. 241stream n'héberge aucun contenu.
+      </p>
     </div>
   </footer>
 
   <script defer src="data.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="src/js/app.js"></script>
   <script>
-    // Exemple de films (remplace par tes vrais films)
     const HERO_FILMS = [
-      {
-        title: "Conjuring : L'Heure du jugement - 2025",
-        img: "https://image.tmdb.org/t/p/w300/8XfIKOPmuCZLh5ooK13SPKeybWF.jpg",
-        alt: "Conjuring : L'Heure du jugement",
-        embed: "https://vidzy.org/embed-f1j7dvldcfdl.html"
-      },
-      {
-        title: "Superman 2025",
-        img: "https://image.tmdb.org/t/p/w300/60vQyjChlll1MwFtRQ10NWpUYmw.jpg", alt: "Superman 2025",
-        embed: "https://vidzy.org/embed-076h16h1kg5r.html"
-      },
-      {
-        title: "Hérédité",
-        img: "https://image.tmdb.org/t/p/w400/5Bz0u7xEyOUnGi4ov3rZKqKYCuH.jpg",
-        embed: "https://vidzy.org/embed-c5oft2hfrc28.html"
-      },
-      {
-        title: "Lucifer - Saison 3",
-        img: "https://image.tmdb.org/t/p/w400/r17s6nDPV4smuHVRyDPA36tZeC3.jpg",
-        embed: "https://vidzy.org/embed-8tdog7hxqli2.html"
-      },
-      {
-        title: "Donjons & Dragons : L'Honneur des voleurs",
-        img: "https://image.tmdb.org/t/p/w400/A7AoNT06aRAc4SV89Dwxj3EYAgC.jpg",
-        embed: "https://vidzy.org/embed-7wqisngbsbxb.html"
-      }
+      { title:"Conjuring : L'Heure du jugement", img:"https://image.tmdb.org/t/p/w500/8XfIKOPmuCZLh5ooK13SPKeybWF.jpg", embed:"https://vidzy.org/embed-f1j7dvldcfdl.html" },
+      { title:"Superman 2025", img:"https://image.tmdb.org/t/p/w500/60vQyjChlll1MwFtRQ10NWpUYmw.jpg", embed:"https://vidzy.org/embed-076h16h1kg5r.html" },
+      { title:"Hérédité", img:"https://image.tmdb.org/t/p/w500/5Bz0u7xEyOUnGi4ov3rZKqKYCuH.jpg", embed:"https://vidzy.org/embed-c5oft2hfrc28.html" },
+      { title:"Lucifer – Saison 3", img:"https://image.tmdb.org/t/p/w500/r17s6nDPV4smuHVRyDPA36tZeC3.jpg", embed:"https://vidzy.org/embed-8tdog7hxqli2.html" },
+      { title:"Donjons & Dragons", img:"https://image.tmdb.org/t/p/w500/A7AoNT06aRAc4SV89Dwxj3EYAgC.jpg", embed:"https://vidzy.org/embed-7wqisngbsbxb.html" },
     ];
-
-    function renderHeroCarousel() {
-      const row = document.getElementById("hero-row");
-      if (!row) return;
-      row.innerHTML = "";
-      HERO_FILMS.forEach(film => {
-        const card = document.createElement("div");
-        card.className = "hero-card";
-        card.innerHTML = `
-      <img src="${film.img}" alt="${film.title}" class="hero-thumb">
-      <div class="hero-caption">${film.title}</div>
-    `;
-        card.addEventListener("click", () => {
-          // Ouvre le popup vidéo
-          openHeroPopup(film);
-        });
-        row.appendChild(card);
-      });
-    }
-    renderHeroCarousel();
-
-    // Navigation
-    let heroScroll = 0;
-    document.querySelector(".hero-nav.prev").onclick = () => {
-      heroScroll -= 1;
-      scrollHeroRow();
-    };
-    document.querySelector(".hero-nav.next").onclick = () => {
-      heroScroll += 1;
-      scrollHeroRow();
-    };
-    function scrollHeroRow() {
-      const row = document.getElementById("hero-row");
-      if (!row) return;
-      const cards = row.querySelectorAll(".hero-card");
-      const maxScroll = cards.length - 1;
-      heroScroll = Math.max(0, Math.min(heroScroll, maxScroll));
-      if (cards.length > 0) {
-        row.scrollTo({
-          left: heroScroll * (cards[0].offsetWidth + 24),
-          behavior: "smooth"
-        });
-      }
-    }
-
-    // Popup vidéo
-    function openHeroPopup(film) {
-      let popup = document.getElementById("hero-popup");
-      if (!popup) {
-        popup = document.createElement("div");
-        popup.id = "hero-popup";
-        popup.className = "popup";
-        popup.innerHTML = `
-      <div class="popup-card">
-        <button class="popup-close" aria-label="Fermer">✕</button>
-        <h3 class="popup-title">${film.title}</h3>
-        <div class="player">
-          <iframe src="${film.embed}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    `;
-        document.body.appendChild(popup);
-        popup.querySelector(".popup-close").onclick = () => {
-          popup.remove();
-        };
-        popup.onclick = e => {
-          if (e.target === popup) popup.remove();
-        };
-        document.addEventListener("keydown", e => {
-          if (e.key === "Escape") popup.remove();
-        }, { once: true });
-      }
-    }
+    function renderHeroCarousel(){const r=document.getElementById("hero-row");if(!r)return;r.innerHTML="";HERO_FILMS.forEach(f=>{const c=document.createElement("div");c.className="flex-shrink-0 w-[280px] sm:w-[350px] h-[380px] sm:h-[440px] rounded-2xl overflow-hidden shadow-[0_4px_18px_rgba(0,0,0,.6)] bg-[#1a1a20] cursor-pointer relative group/hero snap-start transform transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_12px_40px_rgba(0,0,0,.85)]";c.innerHTML=`<img src="${f.img}" alt="${f.title}" class="w-full h-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover/hero:opacity-100 transition-opacity duration-300"></div><div class="absolute bottom-0 left-0 right-0 p-5"><p class="text-[#facc15] font-bold text-lg leading-tight mb-2 drop-shadow-lg">${f.title}</p><span class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#facc15] text-[#0a0a0c] text-sm font-bold rounded-full opacity-0 group-hover/hero:opacity-100 transform translate-y-3 group-hover/hero:translate-y-0 transition-all duration-300 shadow-[0_0_20px_rgba(250,204,21,.15)]"><ion-icon name="play-circle-outline"></ion-icon> Regarder</span></div>`;c.addEventListener("click",()=>openHeroPopup(f));r.appendChild(c);})}
+    function openHeroPopup(f){const e=document.getElementById("hero-popup");if(e)e.remove();const o=document.createElement("div");o.id="hero-popup";o.className="fixed inset-0 z-[1000] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4";o.style.animation="fadeIn .3s ease-out";o.innerHTML=`<div class="bg-[#131317] w-full max-w-3xl rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,.9)] overflow-hidden relative" style="animation:scaleIn .3s ease-out"><button class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-[#facc15] text-[#0a0a0c] flex items-center justify-center font-bold text-xl hover:bg-[#ffe84d] transition-all cursor-pointer" aria-label="Fermer">&times;</button><div class="p-5 pb-3"><h3 class="font-bold text-lg text-[#f5f5f5] pr-12">${f.title}</h3></div><div class="px-5 pb-5"><div class="aspect-video w-full bg-black rounded-2xl overflow-hidden"><iframe src="${f.embed}?autoplay=1" allow="autoplay;encrypted-media" allowfullscreen class="w-full h-full border-0"></iframe></div></div></div>`;document.body.appendChild(o);document.body.style.overflow="hidden";const cl=()=>{o.remove();document.body.style.overflow=""};o.querySelector("button").onclick=cl;o.onclick=(ev)=>{if(ev.target===o)cl()};document.addEventListener("keydown",function esc(ev){if(ev.key==="Escape"){cl();document.removeEventListener("keydown",esc)}})}
+    document.addEventListener("DOMContentLoaded",()=>{renderHeroCarousel();const r=document.getElementById("hero-row");let p=0;document.getElementById("hero-prev").onclick=()=>{p=Math.max(0,p-1);sh()};document.getElementById("hero-next").onclick=()=>{p++;sh()};function sh(){const cards=r.querySelectorAll(":scope > div");if(!cards.length)return;p=Math.max(0,Math.min(p,cards.length-1));r.scrollTo({left:p*(cards[0].offsetWidth+20),behavior:"smooth"})}});
   </script>
-</body>
 
+</body>
 </html>

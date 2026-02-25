@@ -1,139 +1,159 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditions d'utilisation - 241stream</title>
-  <meta name="description"
-    content="Conditions d'utilisation de 241stream. Lisez attentivement avant d'utiliser notre site de streaming gratuit.">
+  <title>Conditions d'utilisation | 241stream</title>
+  <meta name="description" content="Conditions générales d'utilisation de la plateforme de streaming 241stream.">
   <meta name="robots" content="index, follow">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/images/stream241.jpg" type="image/x-icon">
-
-
-  <style>
-    h1 {
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 20;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.742);
-    }
-
-    section {
-      border-radius: 30px;
-      box-shadow: 0 2px black;
-      margin: 20px;
-      padding: 20px;
-      background: rgb(7, 7, 7);
-    }
-
-    @media (max-width:600px) {
-      h1 {
-        border-radius: 20px;
-        font-size: 1rem;
-        margin-top: 40px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.742);
-      }
-
-      section p {
-        margin: 20px;
-        font-size: 0.9rem;
-      }
-
-      section h2 {
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width:760px) {
-      h1 {
-        font-size: 0.6;
-      }
-    }
-  </style>
+  <meta property="og:title" content="Conditions d'utilisation — 241stream">
+  <meta property="og:description" content="Conditions générales d'utilisation de 241stream.">
+  <meta property="og:url" content="https://241stream.online/terms.html">
+  <meta property="og:image" content="https://241stream.online/src/assets/images/stream241.jpg">
+  <link rel="icon" type="image/png" href="src/assets/images/stream241.jpg">
+  <link rel="canonical" href="https://241stream.online/terms.html">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
 </head>
+<body data-page="terms" class="bg-[#0a0a0c] text-[#f5f5f5] font-['Inter',system-ui,sans-serif] antialiased overflow-x-hidden">
 
-<body>
-  <header>
-    <div class="header-content">
-      <a class="logo" href="index.html"><img src="assets/images/stream241.jpg" alt="logo 241stream"><strong
-          class="brand">241stream</strong></a>
-      <nav class="nav-links">
-        <button class="menu-toggle" aria-label="Menu">Menu☰</button>
-        <ul>
-          <li><a class="active" href="index.html"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
-          <li><a href="films.html"><ion-icon name="film-outline"></ion-icon> Films</a></li>
-          <li><a href="series.html"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
-          <li><a href="animes.html"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
-          <li><a href="faq.html"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#131317]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 no-underline group shrink-0">
+        <img src="src/assets/images/stream241.jpg" alt="241stream" width="38" height="38" class="rounded-full shadow-lg ring-2 ring-[#facc15]/20 group-hover:ring-[#facc15]/50 transition-all duration-300">
+        <span class="text-[#facc15] font-extrabold text-lg tracking-wider hidden sm:block group-hover:text-[#ffe84d] transition-colors">241stream</span>
+      </a>
+      <nav class="flex items-center gap-2">
+        <button id="menu-toggle" class="lg:hidden bg-transparent border-0 text-[#f5f5f5] text-2xl cursor-pointer p-2 hover:text-[#facc15] transition-colors" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
+        <ul id="nav-menu" class="hidden lg:flex items-center gap-1 list-none m-0 p-0">
+          <li><a href="index.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+          <li><a href="films.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+          <li><a href="series.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+          <li><a href="animes.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+          <li><a href="faq.html" class="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
         </ul>
       </nav>
-      <form class="search-form" role="search">
-        <input name="q" type="text" placeholder="Rechercher...">
-        <button aria-label="Rechercher"><ion-icon name="search-outline"></ion-icon></button>
-      </form>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#131317]/95 backdrop-blur-xl border-t border-white/5 px-4 pb-4">
+      <ul class="flex flex-col gap-1 pt-2 list-none m-0 p-0">
+        <li><a href="index.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="home-outline"></ion-icon> Accueil</a></li>
+        <li><a href="films.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="film-outline"></ion-icon> Films</a></li>
+        <li><a href="series.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="tv-outline"></ion-icon> Séries</a></li>
+        <li><a href="animes.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="sparkles-outline"></ion-icon> Animés</a></li>
+        <li><a href="faq.html" class="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-[#a1a1aa] hover:text-[#facc15] hover:bg-white/5 no-underline transition-all"><ion-icon name="help-circle-outline"></ion-icon> FAQ</a></li>
+      </ul>
     </div>
   </header>
 
-  <main>
-    <div>
-      <h1>Conditions générales d’utilisation</h1>
+  <main class="min-h-screen pt-[80px]">
+    <div class="max-w-[800px] mx-auto px-4 sm:px-6 py-10">
+      <!-- Page Title -->
+      <div class="text-center mb-10 animate-[fadeUp_.5s_ease-out]">
+        <div class="w-14 h-14 rounded-2xl bg-[#facc15]/10 flex items-center justify-center mx-auto mb-4">
+          <ion-icon name="document-text-outline" class="text-[#facc15] text-3xl"></ion-icon>
+        </div>
+        <h1 class="font-['Manrope',sans-serif] text-2xl sm:text-3xl font-extrabold text-[#f5f5f5] mb-2">Conditions d'utilisation</h1>
+        <p class="text-[#a1a1aa] text-sm">Dernière mise à jour : janvier 2025</p>
+      </div>
+
+      <!-- Sections -->
+      <div class="space-y-6">
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">1. Acceptation des conditions</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">En accédant et en utilisant le site web 241stream (<strong class="text-[#f5f5f5]">241stream.online</strong>), vous acceptez d'être lié par les présentes conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">2. Description du service</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">241stream est un site agrégateur de liens vers des contenus vidéo (films, séries, animés) hébergés par des plateformes tierces. Nous <strong class="text-[#f5f5f5]">n'hébergeons, ne stockons ni ne diffusons</strong> directement aucun contenu vidéo ou audio. Tous les médias sont intégrés (embed) depuis des services externes.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">3. Propriété intellectuelle</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Le design, le code, les textes et les éléments graphiques de 241stream sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="close-circle-outline" class="text-red-400 text-sm mt-1 shrink-0"></ion-icon> <span>Reproduire, distribuer ou modifier le contenu du site sans autorisation.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="close-circle-outline" class="text-red-400 text-sm mt-1 shrink-0"></ion-icon> <span>Utiliser le site à des fins commerciales non autorisées.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="close-circle-outline" class="text-red-400 text-sm mt-1 shrink-0"></ion-icon> <span>Créer des sites miroirs ou scraper le contenu.</span></li>
+          </ul>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">4. Responsabilité</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">241stream décline toute responsabilité concernant :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="alert-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Le contenu hébergé sur les plateformes tierces — la responsabilité incombe aux hébergeurs.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="alert-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Les interruptions ou indisponibilités du service.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="alert-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Les dommages résultant de l'utilisation du site ou de l'accès à des sites tiers.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="alert-circle-outline" class="text-[#facc15] text-sm mt-1 shrink-0"></ion-icon> <span>Les publicités ou pop-ups affichées par les lecteurs vidéo tiers.</span></li>
+          </ul>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">5. Utilisation acceptable</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">En utilisant 241stream, vous vous engagez à :</p>
+          <ul class="space-y-2 text-[#a1a1aa]">
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-green-400 text-sm mt-1 shrink-0"></ion-icon> <span>Utiliser le site conformément aux lois applicables.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-green-400 text-sm mt-1 shrink-0"></ion-icon> <span>Ne pas tenter de perturber le fonctionnement du site.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-green-400 text-sm mt-1 shrink-0"></ion-icon> <span>Ne pas utiliser de scripts automatisés ou de bots.</span></li>
+            <li class="flex items-start gap-2"><ion-icon name="checkmark-circle-outline" class="text-green-400 text-sm mt-1 shrink-0"></ion-icon> <span>Respecter les droits d'auteur et la propriété intellectuelle.</span></li>
+          </ul>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">6. Liens externes</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">Notre site contient des liens vers des sites tiers. Nous n'avons aucun contrôle sur le contenu de ces sites et déclinons toute responsabilité à leur égard. Nous vous encourageons à lire les conditions d'utilisation de chaque site tiers visité.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">7. Modifications</h2>
+          <p class="text-[#a1a1aa] leading-relaxed">Nous nous réservons le droit de modifier ces conditions à tout moment et sans préavis. Les modifications prennent effet dès leur publication sur cette page. Nous vous recommandons de consulter régulièrement cette page.</p>
+        </section>
+
+        <section class="bg-[#1a1a20]/50 border border-white/5 rounded-2xl p-6 sm:p-8 hover:border-[#facc15]/20 transition-all duration-300">
+          <h2 class="text-lg font-bold text-[#f5f5f5] mb-4">8. Contact</h2>
+          <p class="text-[#a1a1aa] leading-relaxed mb-3">Pour toute question relative aux conditions d'utilisation :</p>
+          <a href="mailto:dmca241stream@gmail.com" class="inline-flex items-center gap-2 text-[#facc15] font-semibold hover:text-[#ffe84d] transition-colors">
+            <ion-icon name="mail-outline"></ion-icon> dmca241stream@gmail.com
+          </a>
+        </section>
+      </div>
     </div>
-    <section>
-      <h2>Acceptation des conditions</h2>
-      <p>
-        En accédant à 241stream, vous acceptez d’utiliser le site uniquement à des fins personnelles et non
-        commerciales.
-      </p>
-    </section>
-
-    <section>
-      <h2>Responsabilité</h2>
-      <p>
-        241stream ne stocke aucun fichier vidéo sur ses serveurs.
-        Tous les contenus sont hébergés par des plateformes tierces.
-        Nous déclinons toute responsabilité quant à l’utilisation abusive du site.
-      </p>
-    </section>
-
-    <section>
-      <h2>Modifications</h2>
-      <p>
-        Nous nous réservons le droit de modifier les présentes conditions à tout moment.
-        Il est de votre responsabilité de les consulter régulièrement.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <a href="index.html" class="logo"><img src="assets/images/stream241.jpg" alt=""><strong
-        class="brand">241stream</strong></a>
-    <div class="footer-content">
-      <p>&copy; 2025 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces. 241stream n’héberge
-        aucun contenu.</p>
-      <hr class="hr">
-      <ul>
-        <li><a href="faq.html">FAQ |</a></li>
-        <li><a href="about.html">ABOUT |</a></li>
-        <li><a href="dmca.html" target="_blank">DMCA |</a></li>
-        <li><a href="privacy.html">TERMS |</a></li>
-        <li><a href="terms.html">PRIVACY</a></li>
-      </ul>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/15vA9yGFgb/?mibextid=wwXIfr" target="_blank"><ion-icon
-          name="logo-facebook"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-twitter" target="_blank"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-instagram" target="_blank"></ion-icon></a>
-      <a href="https://youtube.com/@241stream?si=IdZ8Ushhw-UnrBDV" target="_blank"><ion-icon
-          name="logo-youtube"></ion-icon></a>
+  <!-- FOOTER -->
+  <footer class="bg-[#131317]/80 backdrop-blur-xl border-t border-white/5 mt-10">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
+        <a href="index.html" class="flex items-center gap-3 no-underline group">
+          <img src="src/assets/images/stream241.jpg" alt="241stream" width="36" height="36" class="rounded-full ring-2 ring-[#facc15]/20" loading="lazy">
+          <span class="text-[#facc15] font-extrabold text-base tracking-wider group-hover:text-[#ffe84d] transition-colors">241stream</span>
+        </a>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/share/15vA9yGFgb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-[#facc15] hover:border-[#facc15]/30 hover:bg-[#facc15]/10 transition-all" aria-label="Facebook"><ion-icon name="logo-facebook" class="text-lg"></ion-icon></a>
+          <a href="https://youtube.com/@241stream?si=IdZ8Ushhw-UnrBDV" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-red-500 hover:border-red-500/30 hover:bg-red-500/10 transition-all" aria-label="YouTube"><ion-icon name="logo-youtube" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-blue-400 hover:border-blue-400/30 hover:bg-blue-400/10 transition-all" aria-label="Twitter"><ion-icon name="logo-twitter" class="text-lg"></ion-icon></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#a1a1aa] hover:text-pink-500 hover:border-pink-500/30 hover:bg-pink-500/10 transition-all" aria-label="Instagram"><ion-icon name="logo-instagram" class="text-lg"></ion-icon></a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-6">
+        <a href="faq.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">FAQ</a>
+        <a href="about.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">À propos</a>
+        <a href="dmca.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">DMCA</a>
+        <a href="terms.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Conditions</a>
+        <a href="privacy.html" class="text-[#a1a1aa] hover:text-[#facc15] transition-colors no-underline font-medium">Confidentialité</a>
+      </div>
+      <div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-6"></div>
+      <p class="text-center text-xs text-[#71717a] max-w-xl mx-auto leading-relaxed">&copy; 2026 241stream — Toutes les vidéos sont intégrées depuis des plateformes tierces.</p>
     </div>
   </footer>
 
-  <script defer src="data.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="src/js/app.js"></script>
 </body>
-
 </html>
