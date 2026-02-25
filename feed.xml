@@ -7,13 +7,13 @@
     <language>fr</language>
     <copyright>Copyright 2026 241stream</copyright>
     <atom:link href="https://241stream.online/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>2026-02-25T10:00:00Z</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2026 10:00:00 +0000</lastBuildDate>
     
     <item>
       <title>Nouveaux films disponibles</title>
       <link>https://241stream.online/films.html</link>
       <description>Découvrez les derniers films ajoutés au catalogue : action, horreur, comédie en streaming gratuit HD.</description>
-      <pubDate>2026-02-25T09:00:00Z</pubDate>
+      <pubDate>Tue, 25 Feb 2026 09:00:00 +0000</pubDate>
       <guid>https://241stream.online/films.html</guid>
       <category>Films</category>
     </item>
@@ -22,7 +22,7 @@
       <title>Nouvelles séries disponibles</title>
       <link>https://241stream.online/series.html</link>
       <description>Retrouvez les dernières séries ajoutées en streaming gratuit VF et VOSTFR.</description>
-      <pubDate>2026-02-25T08:00:00Z</pubDate>
+      <pubDate>Tue, 25 Feb 2026 08:00:00 +0000</pubDate>
       <guid>https://241stream.online/series.html</guid>
       <category>Séries</category>
     </item>
@@ -31,7 +31,7 @@
       <title>Nouveaux animes disponibles</title>
       <link>https://241stream.online/animes.html</link>
       <description>Solo Leveling, Jujutsu Kaisen et bien d'autres animes en streaming gratuit.</description>
-      <pubDate>2026-02-25T07:00:00Z</pubDate>
+      <pubDate>Tue, 25 Feb 2026 07:00:00 +0000</pubDate>
       <guid>https://241stream.online/animes.html</guid>
       <category>Animes</category>
     </item>

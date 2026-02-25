@@ -6,7 +6,7 @@
   <Description>Recherchez des films, séries et animes en streaming gratuit HD sur 241stream.</Description>
   <Tags>films series animes streaming gratuit VF VOSTFR HD</Tags>
   <Contact>dmca241stream@gmail.com</Contact>
-  <Url type="text/html" method="GET" template="https://241stream.online/films.html"/>
+  <Url type="text/html" method="GET" template="https://241stream.online/?q={searchTerms}"/>
   <SearchForm>https://241stream.online/</SearchForm>
   <Image height="64" width="64" type="image/jpeg">https://241stream.online/src/assets/images/stream241.jpg</Image>
   <Developer>241stream Team</Developer>

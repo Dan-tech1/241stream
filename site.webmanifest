@@ -1,0 +1,48 @@
+{
+  "name": "241stream — Films, Séries et Animes en Streaming Gratuit",
+  "short_name": "241stream",
+  "description": "Regardez vos films, séries et animes préférés en streaming gratuit HD. Large catalogue VF/VOSTFR, sans inscription.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": ["entertainment", "video"],
+  "icons": [
+    {
+      "src": "/src/assets/images/stream241.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/assets/images/stream241.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Films",
+      "short_name": "Films",
+      "url": "/films.html",
+      "icons": [{ "src": "/src/assets/images/stream241.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Séries",
+      "short_name": "Séries",
+      "url": "/series.html",
+      "icons": [{ "src": "/src/assets/images/stream241.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Animes",
+      "short_name": "Animes",
+      "url": "/animes.html",
+      "icons": [{ "src": "/src/assets/images/stream241.jpg", "sizes": "192x192" }]
+    }
+  ]
+}
