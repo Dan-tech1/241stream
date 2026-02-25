@@ -6,6 +6,17 @@
 const qs = (s, r = document) => r.querySelector(s);
 const qsa = (s, r = document) => [...r.querySelectorAll(s)];
 
+/* ===== Ad: Social Bar (chargé une seule fois au premier play) ===== */
+let _adLoaded = false;
+function loadSocialBarAd() {
+  if (_adLoaded) return;
+  _adLoaded = true;
+  const s = document.createElement("script");
+  s.src = "https://pl28795258.effectivegatecpm.com/48/5c/e1/485ce1cfa3721d17e3266013306f44db.js";
+  s.async = true;
+  document.body.appendChild(s);
+}
+
 /* ===== Card Template (Premium) ===== */
 function cardTemplate(item, index, opts = {}) {
   const rankBadge = opts.showRank
@@ -146,6 +157,7 @@ function openPopupFromCard(card) {
       btn.classList.add("bg-[#facc15]", "text-[#0a0a0c]", "border-[#facc15]");
       btn.classList.remove("bg-[#1a1a20]", "text-[#f5f5f5]");
       qs("#player-zone", overlay).innerHTML = `<div class="aspect-video w-full bg-black rounded-2xl overflow-hidden"><iframe src="${btn.dataset.embed}" allowfullscreen allow="autoplay" class="w-full h-full border-0"></iframe></div>`;
+      loadSocialBarAd();
     });
   });
 
@@ -154,6 +166,7 @@ function openPopupFromCard(card) {
   if (playBtn) {
     playBtn.addEventListener("click", () => {
       qs("#player-zone", overlay).innerHTML = `<div class="aspect-video w-full bg-black rounded-2xl overflow-hidden"><iframe src="${embedData}" allowfullscreen allow="autoplay" class="w-full h-full border-0"></iframe></div>`;
+      loadSocialBarAd();
     }, { once: true });
   }
 }
