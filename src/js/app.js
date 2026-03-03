@@ -265,8 +265,30 @@ function buildAnimes() {
   renderRow(qs("#row-animes"), animes, { showRank: true });
 }
 
+/* ===== Service Worker Registration ===== */
+function registerServiceWorker() {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/sw.js", { scope: "/" })
+      .then((reg) => {
+        console.log("[241stream] Service Worker enregistré, scope :", reg.scope);
+        // Vérifier les mises à jour automatiquement
+        reg.addEventListener("updatefound", () => {
+          const newWorker = reg.installing;
+          newWorker.addEventListener("statechange", () => {
+            if (newWorker.state === "activated") {
+              console.log("[241stream] Nouveau Service Worker activé");
+            }
+          });
+        });
+      })
+      .catch((err) => console.warn("[241stream] Erreur SW :", err));
+  }
+}
+
 /* ===== Init ===== */
 window.addEventListener("DOMContentLoaded", () => {
+  registerServiceWorker();
   setupMenu();
   setupSearch();
   setupLazyLoad();
